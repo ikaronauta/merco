@@ -1,11 +1,17 @@
 ---
 sidebar_position: 1
-title: Introducción
-description: Introducción General
+title: Información General MerCo
+description: informacion-general-merco
 slug: /
 ---
 
-## Merco
+### Repositorio
+
+:::caution
+El siguiente repositorio es provisional. 
+:::
+
+>***[https://github.com/ikaronauta/merco](https://github.com/ikaronauta/merco)***
 
 ### Descripción
 

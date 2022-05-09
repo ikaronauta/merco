@@ -50,7 +50,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduccion',
+            docId: 'informacion-general',
             position: 'left',
             label: 'Documentación',
           },
