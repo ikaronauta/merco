@@ -39,8 +39,9 @@ Merco
 |   |
 │   └── Modulo-A (44).md
 │       ├── Descripcion (Chequeo de Precios)
+│       ├── Preferences ("tareaActual" , "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 │       ├── Actividad A (Categorias - Seria un enlace a Actividades)
-│       ├── Actividad B 
+│       ├── Actividad B  (Activity_Marcas)
 │       └── Etc...
 |
 // highlight-next-line
@@ -48,21 +49,43 @@ Merco
 |   ├── Actividad-A (Activity_Categorias_Producto).md (Viene de Actividad Categoria)
 |   |   ├── Descripción (Categorias)
 |   |   ├── Ruta
-|   |   ├── Tablas
+|   |   ├── Tablas (categoria_producto, producto, producto_competencia)
 |   |   └── Consultas
 |   |       |
 |   |       ├── Consulta A 
-|   |       |   ├── Tipo
-|   |       |   ├── Metodo - cargarDatos()
-|   |       |   ├── Condición
-|   |       |   └── Query
+|   |       |   ├── Tipo (select)
+|   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId(), objetoCliente.getCli_subCanal())
+|   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
+|   |       |   ├── Modulos (CHEQUEO_DE_PRECIOS, CHEQUEO_DE_PRECIOS_MARCAS)
+|   |       |   ├── Condiciones 
+|   |       |   |   ├── mPrefs.getString("empresa", "").equals("EC"))
+|   |       |   └── Query (SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
+                FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id
+                FROM producto pr 
+                JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
+                WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
+                ) ORDER BY ccla_txt, orden ASC)
 |   |       |
 |   |       ├── Consulta B
-|   |       |   ├── Tipo
-|   |       |   ├── Condición
-|   |       |   └── Query
+|   |       |   ├── Tipo (select)
+|   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal()))
+|   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
+|   |       |   ├── Modulos (CHEQUEO_DE_PRECIOS, CHEQUEO_DE_PRECIOS_MARCAS)
+|   |       |   ├── Condiciones (ELSE mPrefs.getString("empresa", "").equals("EC"))
+|   |       |   └── Query (SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
+                 FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id 
+                FROM producto pr 
+                JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
+                WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
+                ) ORDER BY ccla_txt, orden ASC)
 |   |       |
-|   |       └── Etc...
+|   |       ├── Consulta etc
+|   |       |   ├── Tipo (select, update, insert, delete)
+|   |       |   ├── Metodo 
+|   |       |   ├── MetodoDesdeDondeSeInvoca 
+|   |       |   ├── Modulos 
+|   |       |   ├── Condiciones 
+|   |       |   └── Query
 |   |
 |   ├── Actividad-B.md
 |   |   ├── Descripción
