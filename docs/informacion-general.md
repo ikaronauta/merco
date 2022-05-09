@@ -54,17 +54,17 @@ Merco
 |   |       |
 |   |       ├── Consulta A 
 |   |       |   ├── Tipo (select)
-|   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId(), objetoCliente.getCli_subCanal())
+|   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId() objetoCliente.getCli_subCanal())
 |   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
 |   |       |   ├── Modulos (CHEQUEO_DE_PRECIOS, CHEQUEO_DE_PRECIOS_MARCAS)
 |   |       |   ├── Condiciones 
-|   |       |   |   ├── mPrefs.getString("empresa", "").equals("EC"))
+|   |       |   |   └── mPrefs.getString("empresa", "").equals("EC"))
 |   |       |   └── Query (SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
-                FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id
-                FROM producto pr 
-                JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
-                WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
-                ) ORDER BY ccla_txt, orden ASC)
+|   |       |            FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id
+|   |       |            FROM producto pr 
+|   |       |            JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
+|   |       |            WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?)
+|   |       |            ORDER BY ccla_txt, orden ASC)
 |   |       |
 |   |       ├── Consulta B
 |   |       |   ├── Tipo (select)
@@ -73,19 +73,19 @@ Merco
 |   |       |   ├── Modulos (CHEQUEO_DE_PRECIOS, CHEQUEO_DE_PRECIOS_MARCAS)
 |   |       |   ├── Condiciones (ELSE mPrefs.getString("empresa", "").equals("EC"))
 |   |       |   └── Query (SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
-                 FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id 
-                FROM producto pr 
-                JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
-                WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
-                ) ORDER BY ccla_txt, orden ASC)
+|   |       |           FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id 
+|   |       |           FROM producto pr 
+|   |       |           JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo 
+|   |       |           WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?)
+|   |       |           ORDER BY ccla_txt, orden ASC)
 |   |       |
-|   |       ├── Consulta etc
-|   |       |   ├── Tipo (select, update, insert, delete)
-|   |       |   ├── Metodo 
-|   |       |   ├── MetodoDesdeDondeSeInvoca 
-|   |       |   ├── Modulos 
-|   |       |   ├── Condiciones 
-|   |       |   └── Query
+|   |       └── Consulta etc
+|   |           ├── Tipo (select, update, insert, delete)
+|   |           ├── Metodo 
+|   |           ├── MetodoDesdeDondeSeInvoca 
+|   |           ├── Modulos 
+|   |           ├── Condiciones 
+|   |           └── Query
 |   |
 |   ├── Actividad-B.md
 |   |   ├── Descripción
