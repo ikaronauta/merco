@@ -51,3 +51,25 @@
     padding: 2rem;
   }
 }
+
+.red{
+  display: inline;
+  color: red;
+  font-weight: bold;
+}
+.blue{
+  display: inline;
+  color: blue;
+  font-weight: bold;
+}
+.green{
+  display: inline;
+  color: green;
+  font-weight: bold;
+}
+section{
+  background-color: rgb(235, 230, 230);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(114, 113, 113);
+}

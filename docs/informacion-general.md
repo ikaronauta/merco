@@ -22,37 +22,47 @@ La información consignada en esta guía de consulta es susceptible a modificaci
 
 ### Mapa del Sitio
 
-
-
 ```js
 // highlight-next-line
 Merco
+|
 ├── Introduccion.md
 |
 ├── App-movil.md
+|   |
 │   ├── Descripción General
 │   └── Descripción Modulos
 |
 // highlight-next-line
 ├── Modulos
+|   |
 │   ├── Informacion-general.md
 |   |
-│   └── Modulo-A (44).md
-│       ├── Descripcion (Chequeo de Precios)
+│   └── Modulo-chequeo-de-precios-por-marca-v2.md
+|       |
+│       ├── Descripcion
 │       ├── Preferences ("tareaActual" , "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
-│       ├── Actividad A (Categorias - Seria un enlace a Actividades)
-│       ├── Actividad B  (Activity_Marcas)
-│       └── Etc...
+│       └── Actividades 
+│           ├── Activity_Categorias_Producto
+│           └── Activity_Marcas
 |
 // highlight-next-line
 ├── Actividades
-|   ├── Actividad-A (Activity_Categorias_Producto).md (Viene de Actividad Categoria)
-|   |   ├── Descripción (Categorias)
+|   |
+|   ├── Activity_Categorias_Producto.md
+|   |   |
+|   |   ├── Descripción
 |   |   ├── Ruta
-|   |   ├── Tablas (categoria_producto, producto, producto_competencia)
+|   |   ├── Tablas
+|   |   |   |
+|   |   |   ├── categoria_producto
+|   |   |   ├── producto_competencia
+|   |   |   └── producto
+|   |   |   
 |   |   └── Consultas
 |   |       |
 |   |       ├── Consulta A 
+|   |       |   |
 |   |       |   ├── Tipo (select)
 |   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId() objetoCliente.getCli_subCanal())
 |   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
@@ -67,6 +77,7 @@ Merco
 |   |       |            ORDER BY ccla_txt, orden ASC)
 |   |       |
 |   |       ├── Consulta B
+|   |       |   |
 |   |       |   ├── Tipo (select)
 |   |       |   ├── Metodo (getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal()))
 |   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
