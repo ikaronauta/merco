@@ -26,7 +26,7 @@ La información consignada en esta guía de consulta es susceptible a modificaci
 // highlight-next-line
 Merco
 |
-├── Introduccion.md
+├── Información-General-Merco.md
 |
 ├── App-movil.md
 |   |
@@ -36,7 +36,7 @@ Merco
 // highlight-next-line
 ├── Modulos
 |   |
-│   ├── Informacion-general.md
+│   ├── Informacion-General.md
 |   |
 │   └── Modulo-chequeo-de-precios-por-marca-v2.md
 |       |
