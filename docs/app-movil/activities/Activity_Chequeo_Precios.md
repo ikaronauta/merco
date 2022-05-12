@@ -23,6 +23,12 @@ slug: /activity-chequeo-precios
 
 ***
 
+## Módulos
+
+[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
+
+***
+
 ## Consultas
 
 ### Consulta A
@@ -53,10 +59,6 @@ slug: /activity-chequeo-precios
 
     Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(marca), canal, String.valueOf(programacion.getClme_id())})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -94,10 +96,6 @@ slug: /activity-chequeo-precios
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta C
@@ -132,10 +130,6 @@ slug: /activity-chequeo-precios
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta D
@@ -166,10 +160,6 @@ slug: /activity-chequeo-precios
 
     Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session), String.valueOf(marca)})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -204,10 +194,6 @@ slug: /activity-chequeo-precios
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta G
@@ -237,10 +223,6 @@ slug: /activity-chequeo-precios
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta H
@@ -268,10 +250,6 @@ slug: /activity-chequeo-precios
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta I
@@ -294,10 +272,6 @@ slug: /activity-chequeo-precios
 
 ```js title="Query"
     null
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -324,8 +298,7 @@ slug: /activity-chequeo-precios
     null
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
+
+*Ultima actualización:   
+12 de mayo de 2022.*

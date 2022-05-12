@@ -22,6 +22,10 @@ slug: /activity-categorias-producto
 
 ***
 
+## Módulos
+
+[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
+
 ## Consultas
 
 ### Consulta A
@@ -63,12 +67,7 @@ slug: /activity-categorias-producto
   
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
-
 
 ### Consulta B
 
@@ -108,10 +107,6 @@ slug: /activity-categorias-producto
   Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal})
   
 ```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-````
 
 ***
 
@@ -154,10 +149,6 @@ slug: /activity-categorias-producto
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta D
@@ -193,10 +184,6 @@ slug: /activity-categorias-producto
 
   Cursor cursor = db.rawQuery(selectQuery, new String[]{codEAN})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -235,10 +222,6 @@ slug: /activity-categorias-producto
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta F
@@ -275,10 +258,6 @@ slug: /activity-categorias-producto
 
   Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session), cli_id})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -320,10 +299,6 @@ slug: /activity-categorias-producto
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta H
@@ -357,10 +332,6 @@ slug: /activity-categorias-producto
 
   Cursor cursor = db.rawQuery(selectQuery, null)
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -397,10 +368,6 @@ slug: /activity-categorias-producto
 
   Cursor cursor = db.rawQuery(selectQuery, new String[]{cli_id})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -447,8 +414,7 @@ slug: /activity-categorias-producto
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
+
+*Ultima actualización:   
+12 de mayo de 2022.*

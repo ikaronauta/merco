@@ -21,6 +21,12 @@ slug: /activity-marcas
 
 ***
 
+## Módulos
+
+[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
+
+***
+
 ## Consultas
 
 ### Consulta A
@@ -52,10 +58,6 @@ slug: /activity-marcas
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta B
@@ -84,10 +86,6 @@ slug: /activity-marcas
 
   Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id)})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -125,10 +123,6 @@ slug: /activity-marcas
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta D
@@ -164,10 +158,6 @@ slug: /activity-marcas
  
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta E
@@ -196,10 +186,6 @@ slug: /activity-marcas
 
   Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***
@@ -236,10 +222,6 @@ slug: /activity-marcas
 
 ```
 
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-```
-
 ***
 
 ### Consulta G
@@ -268,10 +250,6 @@ slug: /activity-marcas
 
   Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
 
-```
-
-```js title="Módulos"
-    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
 ```
 
 ***

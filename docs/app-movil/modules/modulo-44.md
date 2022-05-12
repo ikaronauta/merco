@@ -15,11 +15,11 @@ slug: /modulo-chequeo-de-precios-trazabilidad
 prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 ```
 
-## Actividades
+## Activities
 
 - [```Activity_Categorias_Producto```](../activities/Activity_Categorias_Producto.md)
 
-    - [```Activity_Marcas```](../activities/activity-marcas.md)
+    - [```Activity_Marcas```](../activities/Activity_Marcas.md)
 
         - [```Activity_Chequeo_Precios```](../activities/Activity_Chequeo_Precios.md)
 
