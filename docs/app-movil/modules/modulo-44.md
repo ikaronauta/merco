@@ -21,11 +21,10 @@ prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 
     - [```Activity_Marcas```](../activities/activity-marcas.md)
 
-
-
+        - [```Activity_Chequeo_Precios```](../activities/Activity_Chequeo_Precios.md)
 
 
 
 ***
 *Ultima actualización:   
-**xx** de **xxxx** de **2022** *
+12 de mayo de 2022.*

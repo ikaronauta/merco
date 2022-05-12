@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Activity_Marcas
 slug: /activity-marcas
 ---
@@ -276,3 +275,6 @@ slug: /activity-marcas
 ```
 
 ***
+
+*Ultima actualización:   
+12 de mayo de 2022.*
