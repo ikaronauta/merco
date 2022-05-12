@@ -63,8 +63,9 @@ slug: /activity-categorias-producto
   
 ```
 
-#### Módulos {#modulos-consulta-a}
-
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+```
 
 ***
 
@@ -108,8 +109,9 @@ slug: /activity-categorias-producto
   
 ```
 
-#### Módulos {#modulos-consulta-b}
-```PENDIENTE```
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+````
 
 ***
 
@@ -151,8 +153,9 @@ slug: /activity-categorias-producto
 
 ```
 
-#### Módulos {#modulos-consulta-c}
-  ```PENDIENTE```
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+```
 
 ***
 
@@ -191,8 +194,9 @@ slug: /activity-categorias-producto
 
 ```
 
-#### Módulos {#modulos-consulta-d}
-  ```PENDIENTE```
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+```
 
 ***
 
@@ -230,8 +234,9 @@ slug: /activity-categorias-producto
 
 ```
 
-#### Módulos {#modulos-consulta-e}
-  ```PENDIENTE```
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+```
 
 ***
 
@@ -271,8 +276,9 @@ slug: /activity-categorias-producto
 
 ```
 
-#### Módulos {#modulos-consulta-f}
-  ```PENDIENTE```
+```js title="Módulos"
+    CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+```
 
 ***
 

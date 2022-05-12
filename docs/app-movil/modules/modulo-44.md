@@ -19,6 +19,8 @@ prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 
 - [```Activity_Categorias_Producto```](../activities/Activity_Categorias_Producto.md)
 
+    - [```Activity_Marcas```](../activities/activity-marcas.md)
+
 
 
 
