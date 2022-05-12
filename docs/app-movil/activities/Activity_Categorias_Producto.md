@@ -64,8 +64,7 @@ slug: /activity-categorias-producto
 ```
 
 #### Módulos {#modulos-consulta-a}
-[```CHEQUEO_DE_PRECIOS```](../modulos/modulo-44.md)  
-[```CHEQUEO_DE_PRECIOS_MARCAS```](../modulos/modulo-44.md)
+
 
 ***
 
@@ -110,8 +109,7 @@ slug: /activity-categorias-producto
 ```
 
 #### Módulos {#modulos-consulta-b}
-[```CHEQUEO_DE_PRECIOS```](../modulos/modulo-44.md)  
-[```CHEQUEO_DE_PRECIOS_MARCAS```](../modulos/modulo-44.md)
+```PENDIENTE```
 
 ***
 

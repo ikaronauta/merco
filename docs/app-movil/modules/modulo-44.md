@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
-slug: /modulo-chequeo-de-precios-por-marca-v2
+slug: /modulo-chequeo-de-precios-trazabilidad
 ---
 
 
@@ -17,8 +17,8 @@ prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 
 ## Actividades
 
-- [```Activity_Categorias_Producto```](../actividades/activity-categorias-producto.md)  
-    - [```Activity_Marcas```](../actividades/activity-marcas.md)
+- [```Activity_Categorias_Producto```](../activities/Activity_Categorias_Producto.md)
+
 
 
 
