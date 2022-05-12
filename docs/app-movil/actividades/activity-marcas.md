@@ -10,95 +10,43 @@ slug: /activity-marcas
 
 ## Ruta
 
+```js
+  Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+```
+
 ***
 
 ## Tablas
 
-```pendiente```  
-```pendiente```  
-```pendiente```  
+```Pendiente``` 
 
 ***
 
 ## Consultas
 
-
 ### Consulta A
 
-- #### Tipo {#tipo-consulta-a}
-```js 
-  Pendiente
+```sql title="Tipo" 
+
 ```
 
-- #### Método {#metodo-consulta-a}
-```js 
-  Pendiente
+```js title="Método desde donde se invoca"
+
 ```
 
-- #### Método que invoca {#metodo-que-invoca-consulta-a}
-```js
-  Pendiente
+```js title="Condiciones"
+
 ```
 
-- #### Módulos {#modulos-consulta-a}
-```PENDIENTE```   
-```PENDIENTE```
+```js title="Método"
 
-- #### Condiciones {#condiciones-consulta-a}
-```js
-  Pendiente
 ```
 
-- #### Query {#query-consulta-a}
-```sql
-  (
-    Pendiente
-  )
+```sql title="Query"
+
 ```
+
+#### Módulos {#modulos-consulta-A}
+  ```PENDIENTE```
 
 ***
-
-### Consulta B
-
-- #### Tipo {#tipo-consulta-b}
-```js 
-Select
-```
-
-- #### Método {#metodo-consulta-b}
-```js 
-manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
-```
-
-- #### Método que invoca {#metodo-que-invoca-consulta-b}
-```js
-private void cargarDatos()
-```
-
-- #### Módulos {#modulos-consulta-b}
-[```CHEQUEO_DE_PRECIOS```](../modulos/modulo-44.md)  
-[```CHEQUEO_DE_PRECIOS_MARCAS```](../modulos/modulo-44.md)
-
-- #### Condiciones {#condiciones-consulta-b}
-```js
-  mPrefs.getString("empresa", "").equals("EC")
-```
-
-- #### Query {#query-consulta-b}
-```js
-  (
-    SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
-    FROM categoria_producto WHERE ccat_codigo IN
-      (
-        SELECT DISTINCT pr.cat_id
-        FROM producto pr
-        JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
-        WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
-      )
-    ORDER BY ccla_txt, orden ASC
-  )
-```
-
-***
-*Ultima actualización:   
-**xx** de **xxxx** de **2022** *

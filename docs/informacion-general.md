@@ -33,12 +33,12 @@ Merco
 |   |
 │   ├── Descripción-General-App-Movil.md
 |   |
-|   ├── Modulos  // highlight-next-line
-|   |
+ // highlight-next-line
+|   ├── Modulos 
 |   |
 │   ├── Informacion-General.md
 |   |
-│   └── Modulo-chequeo-de-precios-por-marca-v2.md
+│   └── Modulo-CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD.md
 |       |
 │       ├── Descripcion
 │       ├── Preferences ("tareaActual" , "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
@@ -68,7 +68,7 @@ Merco
 |   |       |   ├── MetodoDesdeDondeSeInvoca (cargarDatos)
 |   |       |   ├── Modulos (CHEQUEO_DE_PRECIOS, CHEQUEO_DE_PRECIOS_MARCAS)
 |   |       |   ├── Condiciones 
-|   |       |   |   └── mPrefs.getString("empresa", "").equals("EC"))
+|   |       |   |   └── if (mPrefs.getString("empresa", "").equals("EC"))
 |   |       |   └── Query (SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
 |   |       |            FROM categoria_producto WHERE ccat_codigo IN(SELECT DISTINCT pr.cat_id
 |   |       |            FROM producto pr 
@@ -133,4 +133,4 @@ Merco
 
 ***
 *Ultima actualización:   
-**xx** de **xxxx** de **2022** * 
+12 de mayo de 2022.* 
