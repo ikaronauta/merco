@@ -61,6 +61,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getCategoriasCompetenciaPorCanal() = Método que gestiona Query 
   
   SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
   FROM categoria_producto WHERE ccat_codigo IN
@@ -94,7 +96,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
     if(clienteActual != null)
 
       // highlight-next-line
-      ELSE mPrefs.getString("empresa", "").equals("EC") /*Esta es la condición que contiene el metodo*/
+      else mPrefs.getString("empresa", "").equals("EC") /*Esta es la condición que contiene el metodo*/
 ```
 
 ```js title="Método"
@@ -102,6 +104,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getCategoriasCompetenciaPorCanal() = Método que gestiona Query
   
   SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
   FROM categoria_producto WHERE ccat_codigo IN
@@ -143,6 +147,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategoriasCompetenciaPorCanalYSubCanal() = Método que gestiona Query 
+
   SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
   FROM categoria_producto WHERE ccat_codigo IN
     (
@@ -183,6 +189,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategoriasProductosOrdenarPDV() = Método que gestiona Query 
+
   SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
   FROM rotacionDia rot
   JOIN producto pro ON rot.rd_EAN_material = pro.codigoEAN
@@ -220,6 +228,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategoriasCompetenciaMaxMin() = Método que gestiona Query 
+
   SELECT ccat_codigo, ccla_txt, ccla_color,orden 
   FROM categoria_producto WHERE ccat_codigo IN
     (
@@ -255,6 +265,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getCategoriasProductosMalla() = Método que gestiona Query 
 
   SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
   FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
@@ -296,6 +308,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategoriasProductos() = Método que gestiona Query 
+
   SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
   FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
   JOIN productoscliente pc on pc.cli_codSAP = cl.cli_codigoSap
@@ -333,6 +347,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategoriasProductosInvetario() = Método que gestiona Query 
+
   SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
   FROM categoria_producto cat
   JOIN productoInventario pro ON pro.cat_id = cat.ccat_codigo
@@ -368,6 +384,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getCategorias() = Método que gestiona Query 
+
   SELECT DISTINCT ccat_color, ccat_nombre, ccat_codigo, ccat_requiereOpc, ccat_planometria
   FROM clasificacion_categorias_espacios WHERE ccat_codigo IN 
     (
@@ -400,6 +418,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getAlertasCategoria() = Método que gestiona Query 
 
   SELECT  CASE 
   WHEN a.ale_codigo = 99999 THEN 'Azul'

@@ -55,6 +55,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
 ```sql title="Query"
 
+  // getListaMarcasMaxMin() = Método que gestiona Query 
+
   SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN productoMaxMin p ON m.mar_id = p.mar_id
   JOIN producto_competenciaMaxMin pc ON p.pro_codigo = pc.pro_id
@@ -85,6 +87,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getListaMarcasMaxMin() = Método que gestiona Query
 
   SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto_competenciaMaxMin pc ON m.mar_id = pc.mar_id
@@ -118,6 +122,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getListaMarcasPorCanal() = Método que gestiona Query
 
   SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto p ON m.mar_id = p.mar_id

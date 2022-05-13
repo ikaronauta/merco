@@ -21,7 +21,7 @@ slug: /activity-registro-precios-trazabilidad
 Se muetra al nombre de la tabla y el metodo que la gestiona.
 :::
 
-```js
+```js title="Tabla registroPreciosMarca"
     registroPreciosMarca = getHandlerRegistroPrecioMarca()
 ``` 
 
@@ -54,6 +54,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getPendientesPorMarcaYCanalTrazabilidad() = Método que gestiona Query 
 
     SELECT IFNULL(r.regFecha, ''), IFNULL(r.regCodProductoComp, pcom.proc_codigo), pcom.proc_nombre, IFNULL(r.regValor, '0'), IFNULL(r.regAgotado, '0'), IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, r.regTipo, IFNULL(r.regId, 0), '0', '0'
     FROM producto_competencia pcom 
@@ -100,6 +102,8 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```sql title="Query"
+
+  // getPendientesPorMarcaYCanalTrazabilidad() = Método que gestiona Query 
 
     SELECT DISTINCT IFNULL(r.regFecha, ''), IFNULL(r.regCodProductoPropio, pcom.pro_codigo), pcom.pro_producto, IFNULL(r.regValor, '0'), 
     IFNULL(r.regAgotado, '0'), IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, r.regTipo, IFNULL(r.regId, 0), prpPrecioMin, prpPrecioMax

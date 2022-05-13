@@ -23,6 +23,12 @@ prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 
         - [```Activity_Registro_Precios_Trazabilidad```](../activities/Activity_Registro_Precios_Trazabilidad.md)
 
+            - [```Activity_Registrar_Precio```](../activities/Activity_Registrar_Precio.md)  
+
+            :::tip
+            Esta última **Activity** no tiene como condición ```("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")```.
+            :::
+
 
 
 ***
