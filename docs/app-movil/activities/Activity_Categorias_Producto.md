@@ -17,8 +17,17 @@ slug: /activity-categorias-producto
 
 ## Tablas
 
-```categoria_producto```  
-```clasificacion_categorias_espacios``` 
+:::tip
+Se muetra al nombre de la tabla y el metodo que la gestiona.
+:::
+
+```js title="Tabla categoria_producto"
+    categoria_producto = getHandlerCategoriaProducto()
+``` 
+
+```js title="Tabla clasificacion_categorias_espacios"
+    clasificacion_categorias_espacios = getHandlerCategoriaEspacios()
+``` 
 
 ***
 
@@ -413,6 +422,7 @@ slug: /activity-categorias-producto
     END
 
 ```
+
 
 ***
 

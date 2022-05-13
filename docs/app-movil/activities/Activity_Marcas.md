@@ -17,7 +17,13 @@ slug: /activity-marcas
 
 ## Tablas
 
-```marca``` 
+:::tip
+Se muetra al nombre de la tabla y el metodo que la gestiona.
+:::
+
+```js title="Tabla marca"
+    marca = getHandlerMarca()
+``` 
 
 ***
 
