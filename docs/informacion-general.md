@@ -48,7 +48,7 @@ Merco
 // highlight-next-line
 └── Activities
     |
-    └── Activities.md
+    └── Activity.md
         |
         ├── Descripción
         ├── Ruta
