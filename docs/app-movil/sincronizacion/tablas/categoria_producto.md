@@ -8,6 +8,9 @@ slug: /categoria_producto
 
 ## Endpoint
 
+```Metodo.SINCRONIZARCATEGORIASPRODUCTO```  
+```SICP```
+
 ## Tablas
 
 - ```clmer_productoClasificacion```
