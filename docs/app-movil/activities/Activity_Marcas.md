@@ -183,7 +183,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```js title="Condiciones"
-  null
+  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 ```
 
 ```js title="Método"
@@ -247,7 +247,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```js title="Condiciones"
-  null
+  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 ```
 
 ```js title="Método"
