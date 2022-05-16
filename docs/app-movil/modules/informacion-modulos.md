@@ -5,5 +5,21 @@ slug: /informacion-general-modulos
 ---
 
 ***
-*Ultima actualización:   
-**xx** de **xxxx** de **2022** *
+
+## Update
+
+<div class="ultima-actualizacion">
+  <small>
+    <i>
+      Ultima actualización:
+      <b> Pendiente.</b>
+    </i>
+  </small>
+
+  <small>
+    <i>
+      Actualizado por:
+      <b> Pendiente</b>
+    </i>
+  </small>
+</div>

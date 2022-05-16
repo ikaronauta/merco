@@ -60,3 +60,21 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ***
+
+## Update
+
+<div class="ultima-actualizacion">
+  <small>
+    <i>
+      Ultima actualización:
+      <b> 12 de mayo de 2022.</b>
+    </i>
+  </small>
+
+  <small>
+    <i>
+      Actualizado por:
+      <b> Julian A. Ortiz.</b>
+    </i>
+  </small>
+</div>
