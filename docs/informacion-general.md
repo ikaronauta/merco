@@ -46,25 +46,44 @@ Merco
 |                                  |
 |                                  |
 // highlight-next-line
-└──► Activities                    |
-      |                            |
-      └──► Activity.md ◄───────────┘
-        |
-        ├──► Descripción
-        ├──► Ruta
-        ├──► Tablas
-        ├──► Módulos  
-        └──► Consultas
-            |
-            └──► Consulta
-                  ├──► Tipo
-                  ├──► Método desde donde se invoca 
-                  ├──► Condiciones 
-                  ├──► Método 
-                  └──► Query 
-
-
-
+├──► Activities                    |
+|      |                           |
+|      └──► Activity.md ◄──────────┘
+|        |
+|        ├──► Descripción
+|        ├──► Ruta
+|        ├──► Tablas ───────────────────────────────────┐
+|        ├──► Módulos                                   |
+|        └──► Consultas                                 |
+|            |                                          |
+|            └──► Consulta                              |
+|                  ├──► Tipo                            |
+|                  ├──► Método desde donde se invoca    |
+|                  ├──► Condiciones                     |
+|                  ├──► Método                          |
+|                  └──► Query                           |
+|                                                       |
+// highlight-next-line
+└──► Sincronizacion                                     |
+      |                                                 |
+      ├──► Información-General.md                       |
+      |     |                                           |
+      |     ├──► Descripcion                            |
+      |     ├──► Ruta                                   |
+      |     └──► WebService                             |
+      |                                                 |
+      // highlight-next-line                            
+      └──► Tablas                                       |
+            |                                           |
+            └──► Tabla.md ◄─────────────────────────────┘
+                  |                      ↑
+                  ├──► EndPoint          |
+                  ├──► Tablas ───────────┘
+                  └──► Consultas
+                        |
+                        ├──► Condición
+                        └──► Query
+    
 ```
 
 ***
@@ -75,7 +94,7 @@ Merco
   <small>
     <i>
       Ultima actualización:
-      <b> 12 de mayo de 2022.</b>
+      <b> 16 de mayo de 2022.</b>
     </i>
   </small>
 

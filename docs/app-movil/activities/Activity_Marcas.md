@@ -17,13 +17,12 @@ slug: /activity-marcas
 
 ## Tablas
 
-:::tip
-Se muetra al nombre de la tabla y el metodo que la gestiona.
-:::
-
-```js title="Tabla marca"
-    marca = getHandlerMarca()
-``` 
+- ```producto```
+- ```producto_competencia```
+- ```producto_competenciaMaxMin```
+- ```productoMaxMin```  
+- ```productoPrecio```
+- 
 
 ***
 

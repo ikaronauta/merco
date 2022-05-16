@@ -17,13 +17,10 @@ slug: /activity-registro-precios-trazabilidad
 
 ## Tablas
 
-:::tip
-Se muetra al nombre de la tabla y el metodo que la gestiona.
-:::
-
-```js title="Tabla registroPreciosMarca"
-    registroPreciosMarca = getHandlerRegistroPrecioMarca()
-``` 
+- ```producto```  
+- ```producto_competencia```  
+- ```productoPrecio```
+- ```registroTrazabilidadChequeoPrecios```  
 
 ***
 
@@ -57,27 +54,37 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
   // getPendientesPorMarcaYCanalTrazabilidad() = Método que gestiona Query 
 
-    SELECT IFNULL(r.regFecha, ''), IFNULL(r.regCodProductoComp, pcom.proc_codigo), pcom.proc_nombre, IFNULL(r.regValor, '0'), IFNULL(r.regAgotado, '0'), IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, r.regTipo, IFNULL(r.regId, 0), '0', '0'
+    SELECT IFNULL(r.regFecha, ''), 
+    IFNULL(r.regCodProductoComp, pcom.proc_codigo), pcom.proc_nombre, 
+    IFNULL(r.regValor, '0'), 
+    IFNULL(r.regAgotado, '0'), 
+    IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, r.regTipo, 
+    IFNULL(r.regId, 0), '0', '0'
     FROM producto_competencia pcom 
     LEFT JOIN  
         (
-            SELECT r.regFecha, r.regCodProductoComp, regId regId, regValor regValor, regAgotado,regNoCodificado, regPrecioOferta, regTipo
+            SELECT r.regFecha, r.regCodProductoComp, regId regId, 
+              regValor regValor, regAgotado,regNoCodificado, regPrecioOferta, regTipo
             FROM registroTrazabilidadChequeoPrecios r
             INNER JOIN
                 (
-                    SELECT MAX(regFecha) regFecha, MAX(regId || regCodProductoComp) sumReg, regCodProductoComp, cliId
+                    SELECT MAX(regFecha) regFecha, MAX(regId 
+                      || regCodProductoComp) sumReg, regCodProductoComp, cliId
                     FROM registroTrazabilidadChequeoPrecios
                     WHERE cliId = ?
                     GROUP BY regCodProductoComp, cliId
                 ) 
-                r2 ON r.regFecha = r2.regFecha AND r.regId || r.regCodProductoComp = r2.sumReg AND r.regCodProductoComp = r2.regCodProductoComp
+                r2 ON r.regFecha = r2.regFecha AND r.regId 
+                  || r.regCodProductoComp = r2.sumReg 
+                AND r.regCodProductoComp = r2.regCodProductoComp
                 AND r.cliId = r2.cliId
                 WHERE r.cliId = ?
         )
         r ON r.regCodProductoComp = pcom.proc_codigo
         WHERE pcom.mar_id = ? AND pcom.pro_canal = ?
 
-    Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId, clienteId, String.valueOf(marca), canal})
+    Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId, clienteId, 
+      String.valueOf(marca), canal})
 
 ```
 
@@ -105,29 +112,37 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 
   // getPendientesPorMarcaYCanalTrazabilidad() = Método que gestiona Query 
 
-    SELECT DISTINCT IFNULL(r.regFecha, ''), IFNULL(r.regCodProductoPropio, pcom.pro_codigo), pcom.pro_producto, IFNULL(r.regValor, '0'), 
-    IFNULL(r.regAgotado, '0'), IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, r.regTipo, IFNULL(r.regId, 0), prpPrecioMin, prpPrecioMax
+    SELECT DISTINCT IFNULL(r.regFecha, ''), 
+    IFNULL(r.regCodProductoPropio, pcom.pro_codigo), pcom.pro_producto, 
+    IFNULL(r.regValor, '0'), 
+    IFNULL(r.regAgotado, '0'), IFNULL(r.regNoCodificado, '0'), r.regPrecioOferta, 
+      r.regTipo, 
+    IFNULL(r.regId, 0), prpPrecioMin, prpPrecioMax
     FROM producto pcom
     INNER JOIN productoPrecio pp ON pcom.pro_codigo = pp.proCodigo
     INNER JOIN producto_competencia comp ON pcom.pro_codigo = comp.pro_id 
     LEFT JOIN
         (
-            SELECT r.regFecha, r.regCodProductoPropio, regId regId, regValor regValor, regAgotado, regNoCodificado, regPrecioOferta, regTipo
+            SELECT r.regFecha, r.regCodProductoPropio, regId regId, regValor regValor, 
+              regAgotado, regNoCodificado, regPrecioOferta, regTipo
             FROM registroTrazabilidadChequeoPrecios r
             INNER JOIN
                 (
-                    SELECT MAX(regFecha) regFecha, MAX(regId || regCodProductoPropio) sumReg, regCodProductoPropio
+                    SELECT MAX(regFecha) regFecha, MAX(regId 
+                      || regCodProductoPropio) sumReg, regCodProductoPropio
                     FROM registroTrazabilidadChequeoPrecios
                     WHERE cliId = ?
                     GROUP BY regCodProductoPropio
                 )
-                r2 ON r.regFecha = r2.regFecha AND r.regCodProductoPropio = r2.regCodProductoPropio
+                r2 ON r.regFecha = r2.regFecha 
+                AND r.regCodProductoPropio = r2.regCodProductoPropio
                 AND r.regId || r.regCodProductoPropio = r2.sumReg
         )
         r ON r.regCodProductoPropio = pcom.pro_codigo
         WHERE pcom.mar_id = ? AND comp.pro_canal = ? AND pp.prpSubCanal = ?
 
-    Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId, String.valueOf(marca), canal, subCanal})
+    Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId, 
+      String.valueOf(marca), canal, subCanal})
 
 ```
 
@@ -139,7 +154,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
   <small>
     <i>
       Ultima actualización:
-      <b> 13 de mayo de 2022.</b>
+      <b> 16 de mayo de 2022.</b>
     </i>
   </small>
 

@@ -17,17 +17,22 @@ slug: /activity-categorias-producto
 
 ## Tablas
 
-:::tip
-Se muetra al nombre de la tabla y el metodo que la gestiona.
-:::
-
-```js title="Tabla categoria_producto"
-    categoria_producto = getHandlerCategoriaProducto()
-``` 
-
-```js title="Tabla clasificacion_categorias_espacios"
-    clasificacion_categorias_espacios = getHandlerCategoriaEspacios()
-``` 
+- ```alerta```  
+- [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)  
+- ```clasificacion_categorias_espacios```  
+- ```clasificacion_categoria_registro```
+- ```cliente```
+- ```cliente_mercaderista```  
+- ```producto```  
+- ```producto_competencia```  
+- ```producto_competenciaMaxMin```  
+- ```productoInventario```
+- ```productoMaxMin```
+- ```productoPrecio```
+- ```productoscliente```
+- ```productosventa```  
+- ```rotacionAlerta```
+- ```rotacionDia``` 
 
 ***
 
@@ -452,7 +457,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
   <small>
     <i>
       Ultima actualización:
-      <b> 12 de mayo de 2022.</b>
+      <b> 16 de mayo de 2022.</b>
     </i>
   </small>
 
