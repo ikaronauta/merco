@@ -56,7 +56,7 @@ Merco
 |        ├──► Módulos                                   |
 |        └──► Consultas                                 |
 |            |                                          |
-|            └──► Consulta   
+|            └──► Consulta                              |
 |                  |                                    |
 |                  ├──► Tipo                            |
 |                  ├──► Método desde donde se invoca    |
