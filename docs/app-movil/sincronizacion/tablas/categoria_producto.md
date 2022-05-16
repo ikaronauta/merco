@@ -11,9 +11,13 @@ slug: /categoria_producto
 ```Metodo.SINCRONIZARCATEGORIASPRODUCTO```  
 ```SICP```
 
+***
+
 ## Tablas
 
 - ```clmer_productoClasificacion```
+
+***
 
 ## Consultas
 
@@ -31,6 +35,8 @@ slug: /categoria_producto
   
 ```
 
+***
+
 ### Consulta B
 
 ```js title="Condiciones"
@@ -44,6 +50,7 @@ slug: /categoria_producto
     WHERE ccat_sincronizacion = '1'
   
 ```
+***
 
 ## Update
 

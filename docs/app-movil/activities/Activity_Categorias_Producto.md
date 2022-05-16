@@ -40,6 +40,8 @@ slug: /activity-categorias-producto
 
 [```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
 
+***
+
 ## Consultas
 
 ### Consulta A

@@ -9,11 +9,15 @@ slug: /modulo-chequeo-de-precios-trazabilidad
 
 - **ID:** 44
 
+***
+
 ## Preferences
 
 ```js
 prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 ```
+
+***
 
 ## Activities
 

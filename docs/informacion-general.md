@@ -20,6 +20,8 @@ El siguiente repositorio es provisional.
 La información consignada en esta guía de consulta es susceptible a modificaciones y mejoras. 
 :::
 
+***
+
 ### Mapa del Sitio
 
 ```bash
