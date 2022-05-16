@@ -40,15 +40,15 @@ Merco
 |       |
 │       └── Modulo.md
 |           |
-│           ├── Descripcion
+│           ├── Descripción
 │           ├── Preferences
-│           └── Activities 
-|
-|
+│           └── Activities ───┐
+|                             |
+|                             |
 // highlight-next-line
-└── Activities
-    |
-    └── Activity.md
+└── Activities                |
+    |                         |
+    └── Activity.md ──────────┘
         |
         ├── Descripción
         ├── Ruta
