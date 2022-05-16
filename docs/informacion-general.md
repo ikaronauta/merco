@@ -5,15 +5,15 @@ description: informacion-general-merco
 slug: /
 ---
 
+## Descripción
+
 ### Repositorio
 
 :::caution
 El siguiente repositorio es provisional. 
 :::
 
->***[https://github.com/ikaronauta/merco](https://github.com/ikaronauta/merco)***
-
-### Descripción
+>*[https://github.com/ikaronauta/merco](https://github.com/ikaronauta/merco)*
 
 
 :::caution

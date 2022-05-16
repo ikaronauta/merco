@@ -79,7 +79,7 @@ Se muetra al nombre de la tabla y el metodo que la gestiona.
 ```
 
 ```js title="Condiciones"
-  null
+  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
 ```
 
 ```js title="Método"
