@@ -4,7 +4,6 @@ title: categoria_producto
 slug: /categoria_producto
 ---
 
-***
 
 ## Endpoint
 
