@@ -26,42 +26,42 @@ La información consignada en esta guía de consulta es susceptible a modificaci
 // highlight-next-line
 Merco
 |
-├── Información-General-Merco.md
+├──► Información-General-Merco.md
 |
 // highlight-next-line
-├── App-movil
-|   |
-│   ├── Descripción-General-App-Movil.md
-|   |
+├──► App-movil
+|     |
+│     ├──► Descripción-General-App-Movil.md
+|     |
  // highlight-next-line
-|   └── Modulos 
-|       |
-│       ├── Informacion-General.md
-|       |
-│       └── Modulo.md
-|           |
-│           ├── Descripción
-│           ├── Preferences
-│           └── Activities ───┐
-|                             |
-|                             |
+|     └──► Modulos 
+|          |
+│          ├──► Informacion-General.md
+|          |
+│          └──► Modulo.md
+|               |
+│               ├──► Descripción
+│               ├──► Preferences
+│               └──► Activities ───┐
+|                                  |
+|                                  |
 // highlight-next-line
-└── Activities                |
-    |                         |
-    └── Activity.md ──────────┘
+└──► Activities                    |
+      |                            |
+      └──► Activity.md ◄───────────┘
         |
-        ├── Descripción
-        ├── Ruta
-        ├── Tablas
-        ├── Módulos  
-        └── Consultas
+        ├──► Descripción
+        ├──► Ruta
+        ├──► Tablas
+        ├──► Módulos  
+        └──► Consultas
             |
-            └── Consulta
-                ├── Tipo
-                ├── Método desde donde se invoca 
-                ├── Condiciones 
-                ├── Método 
-                └── Query
+            └──► Consulta
+                  ├──► Tipo
+                  ├──► Método desde donde se invoca 
+                  ├──► Condiciones 
+                  ├──► Método 
+                  └──► Query 
 
 
 
