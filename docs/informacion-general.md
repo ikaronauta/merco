@@ -9,14 +9,14 @@ slug: /
 
 ### Repositorio
 
-:::caution
+:::caution Precaución
 El siguiente repositorio es provisional. 
 :::
 
 >*[https://github.com/ikaronauta/merco](https://github.com/ikaronauta/merco)*
 
 
-:::caution
+:::caution Precaución
 La información consignada en esta guía de consulta es susceptible a modificaciones y mejoras. 
 :::
 
