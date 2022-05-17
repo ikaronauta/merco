@@ -22,7 +22,7 @@ slug: /activity-categorias-producto
 - ```clasificacion_categorias_espacios```  
 - ```clasificacion_categoria_registro```
 - [```cliente```](./../sincronizacion/tablas/cliente.md)
-- ```cliente_mercaderista```  
+- [```cliente_mercaderista```](./../sincronizacion/tablas/cliente_mercaderista.md)  
 - ```producto```  
 - ```producto_competencia```  
 - ```producto_competenciaMaxMin```  

@@ -1,13 +1,20 @@
 ---
 title: Tabla categoria_producto
-slug: /tabla_categoria_producto
+slug: /tabla-categoria-producto
 ---
 
 
 ## Endpoint
 
-```Metodo.SINCRONIZARCATEGORIASPRODUCTO```  
-```SICP```
+```js title="Condiciones"
+  null
+```
+
+```js title="EndPoint"
+  Metodo.SINCRONIZARCATEGORIASPRODUCTO
+
+  SICP
+```
 
 ***
 

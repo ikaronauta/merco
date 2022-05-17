@@ -6,8 +6,13 @@ slug:
 
 ## Endpoint
 
-```  ```  
-``` ```
+```js title="Condiciones"
+
+```
+
+```js title="EndPoint"
+
+```
 
 ***
 

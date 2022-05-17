@@ -6,8 +6,15 @@ slug: /tabla-alerta
 
 ## Endpoint
 
-```Metodo.SINCRONIZARALERTAS ```  
-```SINALE```
+```js title="Condiciones"
+  null
+```
+
+```js title="EndPoint"
+    Metodo.SINCRONIZARALERTAS
+
+    SINALE
+```
 
 ***
 
