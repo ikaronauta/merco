@@ -28,7 +28,7 @@ slug: /activity-categorias-producto
 - [```producto_competenciaMaxMin```](./../sincronizacion/tablas/producto_competenciaMaxMin.md)  
 - ```productoInventario```
 - [```productoMaxMin```](./../sincronizacion/tablas/productoMaxMin.md)
-- ```productoPrecio```
+- [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 - ```productoscliente```
 - ```productosventa```  
 - ```rotacionAlerta```
