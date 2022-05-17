@@ -71,7 +71,7 @@ Merco
       |                                                 |
       ├──► Información-General.md                       |
       |     |                                           |
-      |     ├──► Descripcion                            |
+      |     ├──► Descripción                            |
       |     ├──► Ruta                                   |
       |     └──► WebService                             |
       |                                                 |

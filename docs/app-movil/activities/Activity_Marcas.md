@@ -17,11 +17,11 @@ slug: /activity-marcas
 
 ## Tablas
 
-- ```producto```
-- ```producto_competencia```
-- ```producto_competenciaMaxMin```
-- ```productoMaxMin```  
-- ```productoPrecio```
+- [```producto```](./../sincronizacion/tablas/producto.md)
+- [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)
+- [```producto_competenciaMaxMin```](./../sincronizacion/tablas/producto_competenciaMaxMin.md)
+- [```productoMaxMin```](./../sincronizacion/tablas/productoMaxMin.md)  
+- [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 
 ***
 
