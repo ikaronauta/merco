@@ -57,7 +57,7 @@ slug:
   <small>
     <i>
       Ultima actualización:
-      <b> 16 de mayo de 2022.</b>
+      <b> 17 de mayo de 2022.</b>
     </i>
   </small>
 
