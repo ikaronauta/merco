@@ -13,7 +13,7 @@ slug: /tabla-alerta
 
 ## Tablas
 
-- ```codigo```
+- ```clmer_alertas```
 
 ***
 

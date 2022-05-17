@@ -21,7 +21,7 @@ slug: /activity-categorias-producto
 - [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)  
 - ```clasificacion_categorias_espacios```  
 - ```clasificacion_categoria_registro```
-- ```cliente```
+- [```cliente```](./../sincronizacion/tablas/cliente.md)
 - ```cliente_mercaderista```  
 - ```producto```  
 - ```producto_competencia```  
