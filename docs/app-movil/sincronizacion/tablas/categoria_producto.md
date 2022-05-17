@@ -1,7 +1,6 @@
 ---
-sidebar_position: 1
-title: categoria_producto
-slug: /categoria_producto
+title: Tabla categoria_producto
+slug: /tabla_categoria_producto
 ---
 
 

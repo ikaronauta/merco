@@ -17,13 +17,7 @@ slug: /activity-registrar-precio
 
 ## Tablas
 
-:::tip
-Se muetra al nombre de la tabla y el metodo que la gestiona.
-:::
-
-```js title="Tabla registroTrazabilidadChequeoPrecios"
-    registroTrazabilidadChequeoPrecios = getHandlerRegistroTrazabilidadChequeoPrecios()
-``` 
+```null``` 
 
 ***
 

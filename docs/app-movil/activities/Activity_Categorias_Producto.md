@@ -17,7 +17,7 @@ slug: /activity-categorias-producto
 
 ## Tablas
 
-- ```alerta```  
+- [```alerta```](./../sincronizacion/tablas/alerta.md)  
 - [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)  
 - ```clasificacion_categorias_espacios```  
 - ```clasificacion_categoria_registro```

@@ -22,7 +22,6 @@ slug: /activity-marcas
 - ```producto_competenciaMaxMin```
 - ```productoMaxMin```  
 - ```productoPrecio```
-- 
 
 ***
 
