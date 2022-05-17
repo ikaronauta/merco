@@ -17,9 +17,9 @@ slug: /activity-registro-precios-trazabilidad
 
 ## Tablas
 
-- ```producto```  
-- ```producto_competencia```  
-- ```productoPrecio```
+- [```producto```](./../sincronizacion/tablas/producto.md)  
+- [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)  
+- [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 - ```registroTrazabilidadChequeoPrecios```  
 
 ***
@@ -154,7 +154,7 @@ slug: /activity-registro-precios-trazabilidad
   <small>
     <i>
       Ultima actualización:
-      <b> 16 de mayo de 2022.</b>
+      <b> 17 de mayo de 2022.</b>
     </i>
   </small>
 
