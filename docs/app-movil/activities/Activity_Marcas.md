@@ -8,7 +8,7 @@ slug: /activity-marcas
 ## Ruta
 
 ```js
-  Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
 
 ## Tablas
@@ -96,7 +96,7 @@ if (mPrefs.getString("empresa", "").equals("EC"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasPorCanal(categoria, objetoCanal.getId(), objetoCliente.getCli_subCanal())
+manejador.getHandlerMarca().getListaMarcasPorCanal(categoria, objetoCanal.getId(), objetoCliente.getCli_subCanal())
 ```
 
 ```sql title="Query"

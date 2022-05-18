@@ -1,5 +1,5 @@
 ---
-title: Tabla productoMaxMin
+title: productoMaxMin
 slug: /tabla-productoMaxMin
 ---
 
@@ -7,30 +7,17 @@ slug: /tabla-productoMaxMin
 ## Endpoint
 
 ```js title="Condiciones"
-    if (modulo.equals("12"))
+if (modulo.equals("12"))
 ```
 
 ```js title="EndPoint"
-    Metodo.SINCRONIZARPRODUCTOSMAXMIN
+Metodo.SINCRONIZARPRODUCTOSMAXMIN
 
-    SIPRMODMM
+SIPRMODMM
 ```
 
-***
 
-## Tablas
-
-```null```
-
-***
-
-## Consultas
-
-```null```
-
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>

@@ -76,8 +76,6 @@ Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId, clienteId,
   String.valueOf(marca), canal})
 ```
 
-***
-
 ### Consulta B
 
 :::tip TIPO
@@ -131,15 +129,13 @@ Cursor cursor = db.rawQuery(selectQuery, new String[]{clienteId,
   String.valueOf(marca), canal, subCanal})
 ```
 
-***
-
 ## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 17 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 

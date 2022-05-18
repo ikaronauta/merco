@@ -365,10 +365,10 @@ manejador.getHandlerCategoriaProducto().getAlertasCategoria(clienteActual.getCli
 
 ```sql title="Query"
 SELECT  CASE 
-WHEN a.ale_codigo = 99999 THEN 'Azul'
-WHEN (a.ale_codigo = 10003 OR a.ale_codigo = 10004) THEN 'Amarillo'
-ELSE 'Rojo'
-END Texto, COUNT
+  WHEN a.ale_codigo = 99999 THEN 'Azul'
+  WHEN (a.ale_codigo = 10003 OR a.ale_codigo = 10004) THEN 'Amarillo'
+  ELSE 'Rojo'
+  END Texto, COUNT
   (
     DISTINCT a.ra_EAN_material) Cantidad
     FROM rotacionAlerta a

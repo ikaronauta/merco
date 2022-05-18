@@ -20,11 +20,11 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ### Consulta A
 
 ```js title="Método desde donde se invoca"
-    private boolean almacenarRegistro(RegistroTrazabilidadChequeoPrecios registro, String precio, int opcion, int precioOferta)
+private boolean almacenarRegistro(RegistroTrazabilidadChequeoPrecios registro, String precio, int opcion, int precioOferta)
 ```
 
 ```js title="Método"
-    manejador.getHandlerRegistroTrazabilidadChequeoPrecios().addRegistroTrazabilidadPrecio(registro)
+manejador.getHandlerRegistroTrazabilidadChequeoPrecios().addRegistroTrazabilidadPrecio(registro)
 ```
 
 ## Ultima Actualización

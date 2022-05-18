@@ -1,54 +1,37 @@
 ---
-title: Tabla alerta
+title: alerta
 slug: /tabla-alerta
 ---
 
 
 ## Endpoint
 
-```js title="Condiciones"
-  null
-```
-
 ```js title="EndPoint"
-    Metodo.SINCRONIZARALERTAS
+Metodo.SINCRONIZARALERTAS
 
-    SINALE
+SINALE
 ```
-
-***
 
 ## Tablas
 
 - ```clmer_alertas```
 
-***
-
 ## Consultas
 
 ### Consulta A
 
-```js title="Condiciones"
-    null
-```
-
 ```sql title="Query"
-
-    SELECT codigo, 'a' sin_tipo, texto
-    FROM clmer_alertas
-  
+SELECT codigo, 'a' sin_tipo, texto
+FROM clmer_alertas
 ```
 
-***
-
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 17 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 
