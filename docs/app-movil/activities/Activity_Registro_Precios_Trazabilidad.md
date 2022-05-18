@@ -5,15 +5,11 @@ slug: /activity-registro-precios-trazabilidad
 
 ## Descripción
 
-***
-
 ## Ruta
 
 ```js
-  Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
-
-***
 
 ## Tablas
 
@@ -21,8 +17,6 @@ slug: /activity-registro-precios-trazabilidad
 - [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)  
 - [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 - ```registroTrazabilidadChequeoPrecios```  
-
-***
 
 ## Módulos
 
@@ -34,9 +28,9 @@ slug: /activity-registro-precios-trazabilidad
 
 ### Consulta A
 
-```sql title="Tipo" 
-    Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
     private void cargarProductos(int marca)
@@ -92,9 +86,9 @@ slug: /activity-registro-precios-trazabilidad
 
 ### Consulta B
 
-```sql title="Tipo" 
-    Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
     private void cargarProductos(int marca)

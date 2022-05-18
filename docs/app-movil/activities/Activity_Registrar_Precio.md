@@ -5,63 +5,35 @@ slug: /activity-registrar-precio
 
 ## Descripción
 
-***
-
 ## Ruta
 
 ```js
-  Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
-
-***
-
-## Tablas
-
-```null``` 
-
-***
 
 ## Módulos
 
-```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```
-
-***
+[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](./../modules/modulo-44.md)
 
 ## Consultas
 
 ### Consulta A
 
-```js title="Tipo" 
-    null
-```
-
 ```js title="Método desde donde se invoca"
     private boolean almacenarRegistro(RegistroTrazabilidadChequeoPrecios registro, String precio, int opcion, int precioOferta)
-```
-
-```js title="Condiciones"
-    null
 ```
 
 ```js title="Método"
     manejador.getHandlerRegistroTrazabilidadChequeoPrecios().addRegistroTrazabilidadPrecio(registro)
 ```
 
-```js title="Query"
-
-    null
-
-```
-
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 12 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 

@@ -6,16 +6,13 @@ slug: /modulo-chequeo-de-precios-trazabilidad
 
 ## ID 44
 
-
 ## Descripción
-
 
 ## Preferences
 
 ```js
 prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 ```
-
 
 ## Activities
 
@@ -27,14 +24,13 @@ prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 
 - [```Activity_Registrar_Precio```](../activities/Activity_Registrar_Precio.md)  
 
-
-## Ultima actualización
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 12 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 

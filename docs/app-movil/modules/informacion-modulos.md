@@ -4,9 +4,7 @@ title: Información General
 slug: /informacion-general-modulos
 ---
 
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>

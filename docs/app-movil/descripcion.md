@@ -1,14 +1,11 @@
 ---
 sidebar_position: 1
-title: Descripcion General App-Movil
+title: Descripcion General
 slug: /descripcion-app-movil
 ---
 
-***Pendiente***
 
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>

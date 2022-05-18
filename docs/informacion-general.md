@@ -89,15 +89,13 @@ Merco
     
 ```
 
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 16 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 

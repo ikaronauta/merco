@@ -5,15 +5,11 @@ slug: /activity-marcas
 
 ## Descripción
 
-***
-
 ## Ruta
 
 ```js
   Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
-
-***
 
 ## Tablas
 
@@ -23,96 +19,80 @@ slug: /activity-marcas
 - [```productoMaxMin```](./../sincronizacion/tablas/productoMaxMin.md)  
 - [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 
-***
-
 ## Módulos
 
 [```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
-
-***
 
 ## Consultas
 
 ### Consulta A
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasMaxMin(categoria)
+manejador.getHandlerMarca().getListaMarcasMaxMin(categoria)
 ```
 
 ```sql title="Query"
-
-  // getListaMarcasMaxMin() = Método que gestiona Query 
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN productoMaxMin p ON m.mar_id = p.mar_id
   JOIN producto_competenciaMaxMin pc ON p.pro_codigo = pc.pro_id
-  WHERE m.cat_id = ? AND p.mar_id IS NOT NULL
+WHERE m.cat_id = ? AND p.mar_id IS NOT NULL
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id)})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id)})
 ```
-
-***
 
 ### Consulta B
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasCompMaxMin(categoria)
+manejador.getHandlerMarca().getListaMarcasCompMaxMin(categoria)
 ```
 
 ```sql title="Query"
-
-  // getListaMarcasMaxMin() = Método que gestiona Query
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto_competenciaMaxMin pc ON m.mar_id = pc.mar_id
-  WHERE m.cat_id = ? 
+WHERE m.cat_id = ? 
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id)})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id)})
 ```
-
-***
 
 ### Consulta C
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 
-    // highlight-next-line
-    if (mPrefs.getString("empresa", "").equals("EC")) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if (mPrefs.getString("empresa", "").equals("EC"))
 ```
 
 ```js title="Método"
@@ -120,157 +100,136 @@ slug: /activity-marcas
 ```
 
 ```sql title="Query"
-
-  // getListaMarcasPorCanal() = Método que gestiona Query
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto p ON m.mar_id = p.mar_id
   JOIN producto_competencia pc ON p.pro_codigo = pc.pro_id
-  WHERE m.cat_id = ? AND pc.pro_canal = ? AND p.pro_subCanal = ? AND p.mar_id IS NOT NULL
-  ORDER BY m.mar_nombre ASC
+WHERE m.cat_id = ? AND pc.pro_canal = ? AND p.pro_subCanal = ? AND p.mar_id IS NOT NULL
+ORDER BY m.mar_nombre ASC
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
 ```
-
-***
 
 ### Consulta D
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 
-    // highlight-next-line
-    else (mPrefs.getString("empresa", "").equals("EC")) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+else (mPrefs.getString("empresa", "").equals("EC"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasPorCanal(categoria, objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
+manejador.getHandlerMarca().getListaMarcasPorCanal(categoria, objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
 ```
 
 ```sql title="Query"
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto p ON m.mar_id = p.mar_id
   JOIN producto_competencia pc ON p.pro_codigo = pc.pro_id
-  WHERE m.cat_id = ? AND pc.pro_canal = ? AND p.pro_subCanal = ? AND p.mar_id IS NOT NULL
-  ORDER BY m.mar_nombre ASC
+WHERE m.cat_id = ? AND pc.pro_canal = ? AND p.pro_subCanal = ? AND p.mar_id IS NOT NULL
+ORDER BY m.mar_nombre ASC
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
- 
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
+
 ```
-
-***
 
 ### Consulta E
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasCompPorCanal(categoria, objetoCliente.getCli_canal())
+manejador.getHandlerMarca().getListaMarcasCompPorCanal(categoria, objetoCliente.getCli_canal())
 ```
 
 ```sql title="Query"
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto_competencia pc ON m.mar_id = pc.mar_id
-  WHERE m.cat_id = ? AND pc.pro_canal = ? ORDER BY m.mar_nombre ASC
+WHERE m.cat_id = ? AND pc.pro_canal = ? ORDER BY m.mar_nombre ASC
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
 ```
-
-***
 
 ### Consulta F
 
-```sql title="Tipo" 
- Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2")
-      || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2")
+  || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasPorCanalYSubCanal(categoria, objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
+manejador.getHandlerMarca().getListaMarcasPorCanalYSubCanal(categoria, objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
 ```
 
 ```sql title="Query"
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto p ON m.mar_id = p.mar_id
   INNER JOIN productoPrecio pp ON p.pro_codigo = pp.proCodigo
   JOIN producto_competencia pc ON p.pro_codigo = pc.pro_id
-  WHERE m.cat_id = ? AND pc.pro_canal = ? AND pp.prpSubCanal = ? AND p.mar_id IS NOT NULL
-  ORDER BY m.mar_nombre ASC
+WHERE m.cat_id = ? AND pc.pro_canal = ? AND pp.prpSubCanal = ? AND p.mar_id IS NOT NULL
+ORDER BY m.mar_nombre ASC
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal, subCanal})
 ```
-
-***
 
 ### Consulta G
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarMarcas(int categoria)
+private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-  if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerMarca().getListaMarcasCompPorCanal(categoria, objetoCliente.getCli_canal())
+manejador.getHandlerMarca().getListaMarcasCompPorCanal(categoria, objetoCliente.getCli_canal())
 ```
 
 ```sql title="Query"
-
-  SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
+SELECT DISTINCT m.mar_id, m.mar_nombre, m.cat_id FROM marca m
   JOIN producto_competencia pc ON m.mar_id = pc.mar_id
-  WHERE m.cat_id = ? AND pc.pro_canal = ? ORDER BY m.mar_nombre ASC
+WHERE m.cat_id = ? AND pc.pro_canal = ? ORDER BY m.mar_nombre ASC
 
-  Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
-
+Cursor cursor = db.rawQuery(sql, new String[]{String.valueOf(cat_id), canal})
 ```
 
-***
-
-## Update
+## Ultima Actualización
 
 <div class="ultima-actualizacion">
   <small>
     <i>
       Ultima actualización:
-      <b> 17 de mayo de 2022.</b>
+      <b> 18 de mayo de 2022.</b>
     </i>
   </small>
 
