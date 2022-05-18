@@ -1,15 +1,14 @@
 ---
 sidebar_position: 2
-title: CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD
+title: Chequeo de Precios Trazabilidad
 slug: /modulo-chequeo-de-precios-trazabilidad
 ---
+
+## ID 44
 
 
 ## Descripción
 
-- **ID:** 44
-
-***
 
 ## Preferences
 
@@ -17,27 +16,19 @@ slug: /modulo-chequeo-de-precios-trazabilidad
 prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
 ```
 
-***
 
 ## Activities
 
 - [```Activity_Categorias_Producto```](../activities/Activity_Categorias_Producto.md)
 
-    - [```Activity_Marcas```](../activities/Activity_Marcas.md)
+- [```Activity_Marcas```](../activities/Activity_Marcas.md)
 
-        - [```Activity_Registro_Precios_Trazabilidad```](../activities/Activity_Registro_Precios_Trazabilidad.md)
+- [```Activity_Registro_Precios_Trazabilidad```](../activities/Activity_Registro_Precios_Trazabilidad.md)
 
-            - [```Activity_Registrar_Precio```](../activities/Activity_Registrar_Precio.md)  
-
-            :::tip
-            Esta última **Activity** no tiene como condición ```("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")```.
-            :::
+- [```Activity_Registrar_Precio```](../activities/Activity_Registrar_Precio.md)  
 
 
-
-***
-
-## Update
+## Ultima actualización
 
 <div class="ultima-actualizacion">
   <small>

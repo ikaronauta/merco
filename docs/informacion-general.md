@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Información General MerCo
+title: Información General
 description: informacion-general-merco
 slug: /
 ---

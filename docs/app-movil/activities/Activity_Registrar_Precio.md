@@ -23,7 +23,7 @@ slug: /activity-registrar-precio
 
 ## Módulos
 
-[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](modulo-chequeo-de-precios-trazabilidad)
+```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```
 
 ***
 

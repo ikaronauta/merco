@@ -5,7 +5,6 @@ slug: /activity-categorias-producto
 
 ## Descripción
 
-***
 
 ## Ruta
 
@@ -34,399 +33,362 @@ slug: /activity-categorias-producto
 - ```rotacionAlerta```
 - ```rotacionDia``` 
 
-***
 
 ## Módulos
 
 [```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
 
-***
 
 ## Consultas
 
 ### Consulta A
 
-```sql title="Tipo"
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS") || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))  
-  
-    if(clienteActual != null)
+if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS") 
+  || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))  
 
-      // highlight-next-line
-      if (mPrefs.getString("empresa", "").equals("EC")) /*Esta es la condición que contiene el metodo*/
+if(clienteActual != null)
+
+// highlight-next-line
+if (mPrefs.getString("empresa", "").equals("EC"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId(), objetoCliente.getCli_subCanal())
+manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCanal.getId(), objetoCliente.getCli_subCanal())
 ```
 
 ```sql title="Query"
-
-  // getCategoriasCompetenciaPorCanal() = Método que gestiona Query 
   
-  SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
-  FROM categoria_producto WHERE ccat_codigo IN
-    (
-      SELECT DISTINCT pr.cat_id
-      FROM producto pr
-      JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
-      WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
-    )
-    ORDER BY ccla_txt, orden ASC
+SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
+FROM categoria_producto WHERE ccat_codigo IN
+  (
+    SELECT DISTINCT pr.cat_id
+    FROM producto pr
+    JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
+    WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
+  )
+  ORDER BY ccla_txt, orden ASC
 
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal});
+Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal});
   
 ```
 
-***
 
 ### Consulta B
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS") || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))  
+if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS") || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))  
   
-    if(clienteActual != null)
+if(clienteActual != null)
 
-      // highlight-next-line
-      else mPrefs.getString("empresa", "").equals("EC") /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+else mPrefs.getString("empresa", "").equals("EC")
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
+manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal())
 ```
 
 ```sql title="Query"
 
-  // getCategoriasCompetenciaPorCanal() = Método que gestiona Query
   
-  SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
-  FROM categoria_producto WHERE ccat_codigo IN
-    (
-      SELECT DISTINCT pr.cat_id
-      FROM producto pr
-      JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
-      WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
-    )
-    ORDER BY ccla_txt, orden ASC
+SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden
+FROM categoria_producto WHERE ccat_codigo IN
+  (
+    SELECT DISTINCT pr.cat_id
+    FROM producto pr
+    JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
+    WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
+  )
+  ORDER BY ccla_txt, orden ASC
 
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal})
   
 ```
-
-***
 
 ### Consulta C
 
-```sql title="Tipo"
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2") 
+if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2") 
       || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD"))
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanalYSubCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal());
+manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanalYSubCanal(objetoCliente.getCli_canal(), objetoCliente.getCli_subCanal());
 ```
 
 ```sql title="Query"
 
-  // getCategoriasCompetenciaPorCanalYSubCanal() = Método que gestiona Query 
+SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
+FROM categoria_producto WHERE ccat_codigo IN
+  (
+    SELECT DISTINCT pr.cat_id 
+    FROM producto pr 
+    INNER JOIN productoPrecio pp ON pr.pro_codigo = pp.proCodigo
+    JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
+    WHERE proc.pro_canal = ? AND pp.prpSubCanal = ?
+  ) 
+  ORDER BY ccla_txt, orden ASC
 
-  SELECT DISTINCT ccat_codigo, ccla_txt, ccla_color,orden 
-  FROM categoria_producto WHERE ccat_codigo IN
-    (
-      SELECT DISTINCT pr.cat_id 
-      FROM producto pr 
-      INNER JOIN productoPrecio pp ON pr.pro_codigo = pp.proCodigo
-      JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
-      WHERE proc.pro_canal = ? AND pp.prpSubCanal = ?
-    ) 
-    ORDER BY ccla_txt, orden ASC
-
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, subCanal})
 
 ```
-
-***
 
 ### Consulta D
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("OrdenarPDV"))
+if(mPrefs.getString("tareaActual", "").equals("OrdenarPDV"))
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasProductosOrdenarPDV(clienteActual.getCli_id())
+manejador.getHandlerCategoriaProducto().getCategoriasProductosOrdenarPDV(clienteActual.getCli_id())
 ```
 
 ```sql title="Query"
 
-  // getCategoriasProductosOrdenarPDV() = Método que gestiona Query 
-
-  SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
-  FROM rotacionDia rot
+SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
+FROM rotacionDia rot
   JOIN producto pro ON rot.rd_EAN_material = pro.codigoEAN
   JOIN categoria_producto cat ON pro.cat_id = cat.ccat_codigo
   JOIN cliente cli ON rot.rd_EAN_ptoventa = cli.cli_codigoEAN
-  WHERE cli.cli_id = ?
-  GROUP BY cat.ccat_codigo ORDER BY cat.orden
+WHERE cli.cli_id = ?
+GROUP BY cat.ccat_codigo ORDER BY cat.orden
 
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{codEAN})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{codEAN})
 
 ```
-
-***
 
 ### Consulta E
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
+if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_PRECIOS_MAX/MIN"))
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaMaxMin(clienteMercaderistaActual.getClme_id())
+manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaMaxMin(clienteMercaderistaActual.getClme_id())
 ```
 
 ```sql title="Query"
 
-  // getCategoriasCompetenciaMaxMin() = Método que gestiona Query 
-
-  SELECT ccat_codigo, ccla_txt, ccla_color,orden 
-  FROM categoria_producto WHERE ccat_codigo IN
-    (
-      SELECT DISTINCT pr.cat_id
-      FROM productoMaxMin pr
-      JOIN producto_competenciaMaxMin proc ON proc.pro_id = pr.pro_codigo
-    )
-    ORDER BY orden"
+SELECT ccat_codigo, ccla_txt, ccla_color,orden 
+FROM categoria_producto WHERE ccat_codigo IN
+  (
+    SELECT DISTINCT pr.cat_id
+    FROM productoMaxMin pr
+    JOIN producto_competenciaMaxMin proc ON proc.pro_id = pr.pro_codigo
+  )
+  ORDER BY orden"
 
 ```
-
-***
 
 ### Consulta F
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if((mPrefs.getString("tareaActual", "").equals("MallaCodificacion")) )
+if((mPrefs.getString("tareaActual", "").equals("MallaCodificacion")) )
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null)
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasProductosMalla(clienteMercaderistaActual.getClme_id(), clienteActual.getCli_id())
+manejador.getHandlerCategoriaProducto().getCategoriasProductosMalla(clienteMercaderistaActual.getClme_id(), clienteActual.getCli_id())
 ```
 
 ```sql title="Query"
 
-  // getCategoriasProductosMalla() = Método que gestiona Query 
-
-  SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
-  FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
+SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
+FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
   JOIN productoscliente pc on pc.cli_codSAP = cl.cli_codigoSap
   JOIN producto pro on pc.pro_codigo = pro.pro_codigo
   JOIN productosventa pv on pro.pro_codigo = pv.pro_codigo
   JOIN categoria_producto cat ON pro.cat_id = cat.ccat_codigo
-  WHERE v.clme_id = ? AND pv.cli_id = ?
-  GROUP BY cat.ccat_codigo ORDER BY cat.orden
+WHERE v.clme_id = ? AND pv.cli_id = ?
+GROUP BY cat.ccat_codigo ORDER BY cat.orden
 
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session), cli_id})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session), cli_id})
 
 ```
-
-***
 
 ### Consulta G
 
-```sql title="Tipo" 
- Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("RegistroAgotados") 
-      || mPrefs.getString("tareaActual", "").equals("RegistroDiario") 
-          || (mPrefs.getString("tareaActual", "").equals("RegistroDevolucion"))
+if(mPrefs.getString("tareaActual", "").equals("RegistroAgotados") 
+    || mPrefs.getString("tareaActual", "").equals("RegistroDiario") 
+        || (mPrefs.getString("tareaActual", "").equals("RegistroDevolucion"))
 
-            // highlight-next-line
-            if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null)
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasProductos(clienteMercaderistaActual.getClme_id())
+manejador.getHandlerCategoriaProducto().getCategoriasProductos(clienteMercaderistaActual.getClme_id())
 ```
 
 ```sql title="Query"
 
-  // getCategoriasProductos() = Método que gestiona Query 
-
-  SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
-  FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
+SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
+FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
   JOIN productoscliente pc on pc.cli_codSAP = cl.cli_codigoSap
   JOIN producto pro on pc.pro_codigo = pro.pro_codigo
   JOIN categoria_producto cat ON pro.cat_id = cat.ccat_codigo
-  WHERE v.clme_id = ?
-  GROUP BY cat.ccat_codigo ORDER BY cat.orden
+WHERE v.clme_id = ?
+GROUP BY cat.ccat_codigo ORDER BY cat.orden
 
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session)})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{String.valueOf(session)})
 
 ```
-
-***
 
 ### Consulta H
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if((mPrefs.getString("tareaActual", "").equals("Inventario")))
+if((mPrefs.getString("tareaActual", "").equals("Inventario")))
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null)
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getCategoriasProductosInvetario()
+manejador.getHandlerCategoriaProducto().getCategoriasProductosInvetario()
 ```
 
 ```sql title="Query"
 
-  // getCategoriasProductosInvetario() = Método que gestiona Query 
-
-  SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
-  FROM categoria_producto cat
+SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
+FROM categoria_producto cat
   JOIN productoInventario pro ON pro.cat_id = cat.ccat_codigo
-  GROUP BY cat.ccat_codigo
-  ORDER BY cat.orden
+GROUP BY cat.ccat_codigo
+ORDER BY cat.orden
 
-  Cursor cursor = db.rawQuery(selectQuery, null)
+Cursor cursor = db.rawQuery(selectQuery, null)
 
 ```
-
-***
 
 ### Consulta I
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void cargarDatos()
+private void cargarDatos()
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("RegistroEspacios"))
+if(mPrefs.getString("tareaActual", "").equals("RegistroEspacios"))
 
-    // highlight-next-line
-    if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
+// highlight-next-line
+if(clienteActual != null) /*Esta es la condición que contiene el metodo*/
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaEspacios().getCategorias(clienteActual.getCli_id())
+manejador.getHandlerCategoriaEspacios().getCategorias(clienteActual.getCli_id())
 ```
 
-```sql title="Query"
+```sql title="Query" 
 
-  // getCategorias() = Método que gestiona Query 
+SELECT DISTINCT ccat_color, ccat_nombre, ccat_codigo, ccat_requiereOpc, ccat_planometria
+FROM clasificacion_categorias_espacios WHERE ccat_codigo IN 
+  (
+    SELECT DISTINCT ccat_codigo FROM clasificacion_categoria_registro WHERE cli_id = ?
+  )
+  ORDER BY ccat_nombre
 
-  SELECT DISTINCT ccat_color, ccat_nombre, ccat_codigo, ccat_requiereOpc, ccat_planometria
-  FROM clasificacion_categorias_espacios WHERE ccat_codigo IN 
-    (
-      SELECT DISTINCT ccat_codigo FROM clasificacion_categoria_registro WHERE cli_id = ?
-    )
-    ORDER BY ccat_nombre
-
-  Cursor cursor = db.rawQuery(selectQuery, new String[]{cli_id})
+Cursor cursor = db.rawQuery(selectQuery, new String[]{cli_id})
 
 ```
-
-***
 
 ### Consulta J
 
-```sql title="Tipo" 
-  Select
-```
+:::tip TIPO
+***Select***
+:::
 
 ```js title="Método desde donde se invoca"
-  private void addCategoria(MER_CategoriaProducto item)
+private void addCategoria(MER_CategoriaProducto item)
 ```
 
 ```js title="Condiciones"
-  if(mPrefs.getString("tareaActual", "").equals("OrdenarPDV"))
+if(mPrefs.getString("tareaActual", "").equals("OrdenarPDV"))
 ```
 
 ```js title="Método"
-  manejador.getHandlerCategoriaProducto().getAlertasCategoria(clienteActual.getCli_id(), String.valueOf(item.getCpr_codigo()))
+manejador.getHandlerCategoriaProducto().getAlertasCategoria(clienteActual.getCli_id(), String.valueOf(item.getCpr_codigo()))
 ```
 
 ```sql title="Query"
-
-  // getAlertasCategoria() = Método que gestiona Query 
 
   SELECT  CASE 
   WHEN a.ale_codigo = 99999 THEN 'Azul'
@@ -450,10 +412,7 @@ slug: /activity-categorias-producto
 
 ```
 
-
-***
-
-## Update
+## Ultima actualización
 
 <div class="ultima-actualizacion">
   <small>
