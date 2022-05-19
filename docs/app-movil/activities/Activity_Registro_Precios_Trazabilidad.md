@@ -20,7 +20,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 
 ## Módulos
 
-[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
+[```Chequeo de Precios Trazabilidad```](../modules/modulo-44.md)
 
 ## Consultas
 

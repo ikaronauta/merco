@@ -21,7 +21,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 
 ## Módulos
 
-[```CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD```](../modules/modulo-44.md)
+[```Chequeo de Precios Trazabilidad```](../modules/modulo-44.md)
 
 ## Consultas
 
@@ -179,7 +179,7 @@ private void cargarMarcas(int categoria)
 
 ```js title="Condiciones"
 if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2")
-  || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD"))
+  || mPrefs.getString("tareaActual", "").equals("Chequeo de Precios Trazabilidad"))
 ```
 
 ```js title="Método"

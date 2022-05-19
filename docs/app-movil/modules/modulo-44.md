@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 title: Chequeo de Precios Trazabilidad
 slug: /modulo-chequeo-de-precios-trazabilidad
 ---
@@ -11,7 +11,7 @@ slug: /modulo-chequeo-de-precios-trazabilidad
 ## Preferences
 
 ```js
-prefsEditor.putString("tareaActual", "CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD")
+prefsEditor.putString("tareaActual", "Chequeo de Precios Trazabilidad")
 ```
 
 ## Activities
