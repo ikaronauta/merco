@@ -60,7 +60,6 @@ FROM clmer_cliente cl
     AND cm.clmer_mercaderista = me.mer_cedula
     LEFT JOIN clmer_fotoCliente fc ON cl.cli_id = fc.cli_id
 WHERE (me.mer_jefeDoc = @cedula OR me.mer_cedula= @cedula) AND cl.cli_valido = '1'
-  
 ```
 
 ### Consulta B - Endpoint 1
