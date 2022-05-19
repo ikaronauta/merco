@@ -13,6 +13,16 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categoria_Marca.java
 
 ## Tablas
 
+- [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)
+- [```cliente```](./../sincronizacion/tablas/cliente.md)
+- [```cliente_mercaderista```](./../sincronizacion/tablas/cliente_mercaderista.md)
+- [```marca```](./../sincronizacion/tablas/marca.md)
+- [```producto```](./../sincronizacion/tablas/producto.md)
+- [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)
+- [```productoscliente```](./../sincronizacion/tablas/productoscliente.md)
+- [```productosventa```](./../sincronizacion/tablas/productosventa.md)
+
+
 ## Módulos
 
 [`Registro Espacios`](../modules/modulo-5.md)
@@ -34,12 +44,7 @@ if((mPrefs.getString("tareaActual", "").equals("MallaCodificacion")))
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerCategoriaProducto()
-  .getCategoriasProductosMalla(
-    clienteMercaderistaActual.getClme_id(),
-    String.valueOf(clienteMercaderistaActual.getCli_id())
-  );
+manejador.getHandlerCategoriaProducto().getCategoriasProductosMalla(clienteMercaderistaActual.getClme_id(),String.valueOf(clienteMercaderistaActual.getCli_id()));
 ```
 
 ```sql title="Query"
@@ -76,14 +81,13 @@ else if(mPrefs.getString("tareaActual", "").equals("RegistroAgotados")
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerCategoriaProducto()
-  .getCategoriasProductos(clienteMercaderistaActual.getClme_id());
+manejador.getHandlerCategoriaProducto().getCategoriasProductos(clienteMercaderistaActual.getClme_id());
 ```
 
 ```sql title="Query"
 SELECT DISTINCT cat.ccla_color, cat.orden, cat.ccla_txt, cat.ccat_codigo
-FROM cliente_mercaderista v JOIN cliente cl ON cl.cli_id = v.cli_id
+FROM cliente_mercaderista v 
+    JOIN cliente cl ON cl.cli_id = v.cli_id
     JOIN productoscliente pc on pc.cli_codSAP = cl.cli_codigoSap
     JOIN producto pro on pc.pro_codigo = pro.pro_codigo
     JOIN categoria_producto cat ON pro.cat_id = cat.ccat_codigo
@@ -109,12 +113,7 @@ else if(mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS")
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerCategoriaProducto()
-  .getCategoriasCompetenciaPorCanal(
-    objetoCliente.getCli_canal(),
-    objetoCliente.getCli_subCanal()
-  );
+manejador.getHandlerCategoriaProducto().getCategoriasCompetenciaPorCanal(objetoCliente.getCli_canal(),objetoCliente.getCli_subCanal());
 ```
 
 ```sql title="Query"
@@ -123,7 +122,7 @@ FROM categoria_producto WHERE ccat_codigo IN
     (
         SELECT DISTINCT pr.cat_id
         FROM producto pr
-        JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
+            JOIN producto_competencia proc ON proc.pro_id = pr.pro_codigo
         WHERE proc.pro_canal = ? AND pr.pro_subCanal = ?
     )
     ORDER BY ccla_txt, orden ASC
@@ -146,13 +145,7 @@ if ((mPrefs.getString("tareaActual", "").equals("MallaCodificacion")))
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerMarca()
-  .getListaMarcasRegistroMalla(
-    categoria.getCpr_codigo(),
-    clienteMercaderistaActual.getClme_id(),
-    clienteMercaderistaActual.getCli_id()
-  );
+manejador.getHandlerMarca().getListaMarcasRegistroMalla(categoria.getCpr_codigo(),clienteMercaderistaActual.getClme_id(),clienteMercaderistaActual.getCli_id());
 ```
 
 ```sql title="Query"
@@ -211,13 +204,7 @@ else (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS"))
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerMarca()
-  .getListaMarcasRegistro(
-    categoria.getCpr_codigo(),
-    clienteMercaderistaActual.getClme_id(),
-    "0"
-  );
+manejador.getHandlerMarca().getListaMarcasRegistro(categoria.getCpr_codigo(),clienteMercaderistaActual.getClme_id(),"0");
 ```
 
 ```sql title="Query"
@@ -244,14 +231,7 @@ private void cargarProductos(MER_CategoriaProducto categoria, Marca marca)
 ```
 
 ```js title="Método"
-manejador
-  .getHandlerProducto()
-  .getProductosCategoriaCompetencia(
-    clienteMercaderistaActual.getClme_id(),
-    categoria.getCpr_codigo(),
-    marca.getMar_id(),
-    objetoCliente.getCli_canal()
-  );
+manejador.getHandlerProducto().getProductosCategoriaCompetencia(clienteMercaderistaActual.getClme_id(),categoria.getCpr_codigo(),marca.getMar_id(),objetoCliente.getCli_canal());
 ```
 
 ```sql title="Query"
@@ -272,12 +252,12 @@ Cursor cursor = db.rawQuery(selectQuery, new String[]{canal, String.valueOf(cate
 <div class='ultima-actualizacion'> 
     <small> 
         <i> 
-            Ultima actualizacion: <b> xx de xxxx de 202x.</b> 
+            Ultima actualizacion: <b> 19 de mayo de 2022.</b> 
         </i> 
     </small> 
     <small> 
         <i> 
-        Actualizado por: <b> Xxxxx Xxxxx.</b> 
+        Actualizado por: <b> Julian A. Ortiz.</b> 
         </i> 
     </small> 
 </div>
