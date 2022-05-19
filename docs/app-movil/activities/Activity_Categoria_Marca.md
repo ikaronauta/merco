@@ -20,7 +20,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categoria_Marca.java
 - [```producto```](./../sincronizacion/tablas/producto.md)
 - [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)
 - [```productoscliente```](./../sincronizacion/tablas/productoscliente.md)
-- [```productosventa```](./../sincronizacion/tablas/productosventa.md)
+- ```productosventa```
 
 
 ## Módulos
