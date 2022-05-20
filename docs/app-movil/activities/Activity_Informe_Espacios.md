@@ -14,7 +14,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Informe_Espacios.jav
 
 - ```clasificacion_categoria_registro```
 - ```clasificacion_categorias_espacios```
-- ```planometriaEspacio```
+- [```planometriaEspacio```](./../sincronizacion/tablas/planometriaEspacio.md)
 - ```registro_categoria_espacios```
 - ```registro_espacios```
 
