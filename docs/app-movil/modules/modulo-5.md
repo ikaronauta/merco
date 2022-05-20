@@ -18,6 +18,15 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
 
 - [```Activity_Categoria_Marca```](./../activities/Activity_Categoria_Marca.md)
 
+:::danger Condición
+```js 
+else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
+```
+:::
+
+- [```Activity_Registro_Espacio```](./../activities/Activity_Registro_Espacio.md)
+
+
 ## Ultima Actualización
 
 <div class="ultima-actualizacion">
