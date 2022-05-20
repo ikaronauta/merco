@@ -26,6 +26,13 @@ else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
 
 - [```Activity_Registro_Espacio```](./../activities/Activity_Registro_Espacio.md)
 
+:::danger Condición
+```js 
+if(v == fab_btninformeEspacio)
+```
+:::
+
+- [```Activity_Informe_Espacios```](./../activities/Activity_Informe_Espacios.md)
 
 ## Ultima Actualización
 
