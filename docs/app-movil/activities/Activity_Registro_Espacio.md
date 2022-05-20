@@ -13,10 +13,10 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio.jav
 ## Tablas
 
 - ```clasificacion_categoria_registro```
-- ```cliente```
+- [```cliente```](./../sincronizacion/tablas/cliente.md)
 - ```configuracion```
 - ```motivo_espacio```
-- ```opcion_espacio```
+- [```opcion_espacio```](./../sincronizacion/tablas/opcion_espacio.md)
 - ```registro_categoria_espacios```
 - ```registro_espacios```
 - ```registro_opciones_espacios```
