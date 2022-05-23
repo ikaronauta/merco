@@ -16,7 +16,7 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
 
 ## Activities
 
-- [```Activity_Categoria_Marca```](./../activities/Activity_Categoria_Marca.md)
+- [```Activity_Categorias_Espacio```](./../activities/Activity_Categorias_Espacio.md)
 
 :::danger Condición
 ```js 
