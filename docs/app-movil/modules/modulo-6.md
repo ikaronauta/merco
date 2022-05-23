@@ -32,10 +32,14 @@ prefsEditor.putString("tareaActual", "Transferencia")
   if (v == imgAdd)
   ```
   :::
-  - ```Activity_Productos_Transferencia```
 
   <!-- Tercera Activity dentro de Activity_Transferencia2 -->
-  - ```Activity_Datos_Producto_Transferencia```
+  - [```Activity_Productos_Transferencia```](./../activities/Activity_Productos_Transferencia.md)
+
+    - [```Activity_Datos_Producto_Transferencia```](./../activities/Activity_Datos_Producto_Transferencia.md)  
+
+  <!-- Cuarta Activity dentro de Activity_Transferencia2 -->
+  - [```Activity_Datos_Producto_Transferencia```](./../activities/Activity_Datos_Producto_Transferencia.md)
 
 ## Ultima Actualización
 

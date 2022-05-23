@@ -2,11 +2,27 @@
 title: Activity_Buscador
 slug: /activity-buscador
 ---
-## Descripcion
+
+## Descripción
+
 ## Ruta
-## Tablas
-## Modulos
-## Consultas
-### Consulta x
-## Ultima actualizacion
-<div class='ultima-actualizacion'> <small> <i> Ultima actualizacion: <b> xx de xxxx de 202x.</b> </i> </small> <small> <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> </small> </div>
+
+```js
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Buscador.java
+```
+
+## Módulos
+
+- [```Transferencia```](./../modules/modulo-6.md)
+
+
+## Ultima actualización
+
+<div class='ultima-actualizacion'> 
+    <small> 
+        <i> Ultima actualización: <b> 23 de mayo de 2022.</b> </i> 
+    </small> 
+    <small> 
+        <i> Actualizado por: <b> Julian A. Ortiz.</b> </i> 
+    </small> 
+</div>
