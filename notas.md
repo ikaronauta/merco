@@ -1,28 +1,78 @@
-      // highlight-next-line
-      └── Tablas (Carpeta)
-        |
-        ├── Tabla-categoria_producto.md
-            ├── EndPoint 
-                |
-                Metodo.SINCRONIZARCATEGORIASPRODUCTO
-                SICP
+---
+sidebar_position: 2
+title: Registro Espacios
+slug: /registro_espacios
+---
 
-                Tablas:
-                  clmer_productoClasificacion
+## ID 5
 
-            └── Consultas
+## Descripción
 
-                Consulta-A
-                  condicion: 
-                  if (mer_jerarquia == "V")
-                  sql:
-                  SELECT ccat_codigo 'sin_id','a' AS 'sin_tipo', ccla_txt,ccla_color,ccat_orden 
-                  FROM clmer_productoClasificacion 
-                  WHERE ccat_codigo IN (4,13);
+## Preferences
 
-              Consulta-B
-                condicion: else mer_jerarquia=='V'
-                  sql:
-                  SELECT ccat_codigo 'sin_id','a' AS 'sin_tipo', ccla_txt,ccla_color,ccat_orden 
-                  FROM clmer_productoClasificacion 
-                  WHERE ccat_sincronizacion = '1'
+```js
+prefsEditor.putString("tareaActual", "RegistroEspacios")
+```
+
+## Activities
+
+- [```Activity_Categorias_Espacio```](./../activities/Activity_Categorias_Espacio.md)
+
+:::danger Condición
+```js 
+else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
+```
+:::
+
+- [```Activity_Registro_Espacio```](./../activities/Activity_Registro_Espacio.md)
+
+  :::danger Condición
+    ```js 
+    if (view == fab_marcarFoto)
+    ```
+  :::
+  - [```Activity_Foto_Espacio```](./../activities/Activity_Foto_Espacio.md)  
+  
+
+  :::danger Condición
+  ```js 
+  if (view == imgCuadricula)
+
+  if (registroCuadricula.equals(""))
+  ```
+  :::
+  - [```Activity_Registro_Espacio_Cuadricula```](./../activities/Activity_Registro_Espacio_Cuadricula.md)
+
+    :::danger Condición
+  ```js 
+  if (view == imgCuadricula)
+
+  else (registroCuadricula.equals(""))
+  ```
+  - [```Activity_Registro_Espacio_Cuadricula```](./../activities/Activity_Registro_Espacio_Cuadricula.md)
+
+:::danger Condición
+```js 
+if(v == fab_btninformeEspacio)
+```
+:::
+
+- [```Activity_Informe_Espacios```](./../activities/Activity_Informe_Espacios.md)
+
+## Ultima Actualización
+
+<div class="ultima-actualizacion">
+  <small>
+    <i>
+      Ultima actualización:
+      <b> 19 de mayo de 2022.</b>
+    </i>
+  </small>
+
+  <small>
+    <i>
+      Actualizado por:
+      <b> Julian A. Ortiz.</b>
+    </i>
+  </small>
+</div>
