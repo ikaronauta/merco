@@ -12,6 +12,8 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Tipo_Visibilidad.jav
 
 ## Tablas
 
+- ```tipo_visibilidad```
+
 ## Módulos
 
 - [```Visibilidad```](./../modules/modulo-13.md)
