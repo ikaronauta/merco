@@ -2,11 +2,54 @@
 title: Activity_Registro_Espacio_Cuadricula
 slug: /activity-registro-espacio-cuadricula
 ---
-## Descripcion
+## Descripción
+
 ## Ruta
+
+
+```js
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio_Cuadricula.java
+```
+
 ## Tablas
-## Modulos
+
+- ```clasificacion_categoria_registro```
+
+## Módulos
+
+- [```Registro Espacios```](./../modules/modulo-5.md)
+
 ## Consultas
-### Consulta x
-## Ultima actualizacion
-<div class='ultima-actualizacion'> <small> <i> Ultima actualizacion: <b> xx de xxxx de 202x.</b> </i> </small> <small> <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> </small> </div>
+
+### Consulta A
+
+:::tip TIPO
+***Select***
+:::
+
+```js title="Método desde donde se invoca"
+protected void onCreate(Bundle savedInstanceState)
+```
+
+```js title="Método"
+manejador.getHandlerCategoriaRegistro().getCategorias(Integer.parseInt(clienteActual.getCli_id()), categoria.getCcat_codigo())
+```
+
+```sql title="Query"
+SELECT DISTINCT ccr_codigo, ccr_nombre, ccr_color, cli_id, ccat_codigo, 
+    ccr_orden, ccr_imagen, ccr_id
+FROM clasificacion_categoria_registro
+WHERE cli_id = ? AND ccat_codigo = ? 
+ORDER BY ccr_orden, ccr_nombre
+```
+
+## Ultima actualización
+
+<div class='ultima-actualizacion'> 
+    <small> 
+        <i> Ultima actualización: <b> 23 de mayo de 2022.</b> </i> 
+    </small> 
+    <small> 
+        <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> 
+    </small> 
+</div>

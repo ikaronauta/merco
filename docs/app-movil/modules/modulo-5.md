@@ -26,6 +26,22 @@ else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
 
 - [```Activity_Registro_Espacio```](./../activities/Activity_Registro_Espacio.md)
 
+  :::danger Condición
+    ```js 
+    if (view == fab_marcarFoto)
+    ```
+  :::
+  - [```Activity_Foto_Espacio```](./../activities/Activity_Foto_Espacio.md)
+
+  :::danger Condición
+  ```js 
+  if (view == imgCuadricula)
+
+  if (registroCuadricula.equals(""))
+  ```
+  :::
+  - [```Activity_Registro_Espacio_Cuadricula```](./../activities/Activity_Registro_Espacio_Cuadricula.md)
+
 :::danger Condición
 ```js 
 if(v == fab_btninformeEspacio)
