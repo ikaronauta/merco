@@ -50,6 +50,6 @@ ORDER BY ccr_orden, ccr_nombre
         <i> Ultima actualización: <b> 23 de mayo de 2022.</b> </i> 
     </small> 
     <small> 
-        <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> 
+        <i> Actualizado por: <b> Julian A. Ortiz.</b> </i> 
     </small> 
 </div>
