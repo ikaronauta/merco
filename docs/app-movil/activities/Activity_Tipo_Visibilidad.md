@@ -2,11 +2,48 @@
 title: Activity_Tipo_Visibilidad
 slug: /activity-tipo-visibilidad
 ---
-## Descripcion
+## Descripción
+
 ## Ruta
+
+```js
+Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Tipo_Visibilidad.java
+```
+
 ## Tablas
-## Modulos
+
+## Módulos
+
+- [```Visibilidad```](./../modules/modulo-13.md)
+
 ## Consultas
-### Consulta x
-## Ultima actualizacion
-<div class='ultima-actualizacion'> <small> <i> Ultima actualizacion: <b> xx de xxxx de 202x.</b> </i> </small> <small> <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> </small> </div>
+
+### Consulta A
+
+:::tip TIPO
+***Select***
+:::
+
+```js title="Método desde donde se invoca"
+private void cargarDatos()
+```
+
+```js title="Método"
+manejador.getHandlerTipoVisibilidad().getTiposVisibilidad()
+```
+
+```sql title="Query"
+SELECT id, texto 
+FROM tipo_visibilidad
+```
+
+## Ultima actualización
+
+<div class='ultima-actualizacion'> 
+    <small> 
+        <i> Ultima actualización: <b> 23 de mayo de 2022.</b> </i> 
+    </small> 
+    <small> 
+        <i> Actualizado por: <b> Julian A. Ortiz.</b> </i> 
+    </small> 
+</div>
