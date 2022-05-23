@@ -12,6 +12,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Espacio.j
 
 ## Tablas
 
+- ```clasificacion_categoria_registro``` 
 - ```clasificacion_categorias_espacios```
 
 ## Módulos
@@ -44,24 +45,6 @@ WHERE ccat_codigo IN
         WHERE cli_id = ?
     ) 
     ORDER BY ccat_nombre"
-```
-
-### Consulta B
-
-:::tip TIPO
-***Select***
-:::
-
-```js title="Método desde donde se invoca"
-
-```
-
-```js title="Método"
-
-```
-
-```sql title="Query"
-
 ```
 
 ## Ultima actualización
