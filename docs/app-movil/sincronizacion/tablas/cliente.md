@@ -62,7 +62,7 @@ FROM clmer_cliente cl
 WHERE (me.mer_jefeDoc = @cedula OR me.mer_cedula= @cedula) AND cl.cli_valido = '1'
 ```
 
-### Consulta B - Endpoint 1
+### Consulta B
 
 ```js title="Condiciones"
 else if (jerarquia.Equals("E"))
@@ -87,7 +87,7 @@ FROM clmer_cliente cl
 WHERE me.mer_cedula = @cedula AND cl.cli_valido = '1'  
 ```
 
-### Consulta C - Endpoint 1
+### Consulta C
 
 ```js title="Condiciones"
 else (jerarquia.Equals("E"))

@@ -18,7 +18,7 @@ prefsEditor.putString("tareaActual", "Visibilidad")
 
 - [```Activity_Tipo_Visibilidad```](./../activities/Activity_Tipo_Visibilidad.md)
 
-    - ```Activity_Categorias_Visibilidad```
+    - [```Activity_Categorias_Visibilidad```](./../activities/Activity_Categorias_Visibilidad.md)
 
 ## Ultima Actualización
 

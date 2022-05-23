@@ -10,15 +10,10 @@ slug: /activity-webviewespacios
 Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_WebViewEspacios.java
 ```
 
-## Tablas
-
 ## Módulos
 
 - [```Registro Espacios```](./../modules/modulo-5.md)
 
-## Consultas
-
-### Consulta x
 
 ## Ultima actualización
 
