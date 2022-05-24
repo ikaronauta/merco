@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: Chequeo de Precios Trazabilidad
 slug: /modulo-chequeo-de-precios-trazabilidad
 ---
