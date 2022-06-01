@@ -13,7 +13,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Transferencia2.java
 ## Tablas
 
 - [```cliente```](./../sincronizacion/tablas/cliente.md)
-- [```distribuidor```](./../sincronizacion/tablas/distribuidor.md)
+- [```distribuidor```](./../sincronizacion/tablas/distribuidor.md)|
 - [```producto```](./../sincronizacion/tablas/producto.md)
 
 ## Modulos
