@@ -2,9 +2,22 @@
 title: foto_cpv
 slug: /foto-cpv
 ---
+
 ## Endpoint
+
 ## Tablas
+
 ## Consultas
+
 ### Consulta x
-## Ultima actualizacion
-<div class='ultima-actualizacion'> <small> <i> Ultima actualizacion: <b> xx de xxxx de 202x.</b> </i> </small> <small> <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> </small> </div>
+
+## Ultima actualización
+
+<div class='ultima-actualizacion'> 
+    <small> 
+        <i> Ultima actualización: <b> 1 de junio de 2022.</b> </i> 
+    </small> 
+    <small> 
+        <i> Actualizado por: <b> Julian A. Ortiz.</b> </i> 
+    </small> 
+</div>
