@@ -18,7 +18,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Transferencia2.java
 
 ## Modulos
 
-- [```Transferencia```](./../modules/modulo-5.md)
+- [```Transferencia```](./../modules/modulo-6.md)
 
 ## Consultas
 
