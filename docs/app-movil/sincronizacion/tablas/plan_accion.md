@@ -10,6 +10,11 @@ SoapCall.Metodo.ENVIARPLANACCION
 
 ENPLAN
 ```
+```js title="Endpoint"
+SoapCall.Metodo.ELIMINARPLANACCION
+
+DPL
+```
 
 ### Consulta A
 
