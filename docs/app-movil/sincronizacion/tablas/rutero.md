@@ -11,6 +11,12 @@ SoapCall.Metodo.ENVIARRUTERO
 ENRUT
 ```
 
+```js title="Endpoint"
+SoapCall.Metodo.ACTUALIZARRUTERO
+
+ACRUT
+```
+
 ### Consulta x
 
 ## Ultima actualización
