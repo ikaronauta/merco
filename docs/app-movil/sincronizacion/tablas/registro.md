@@ -3,8 +3,26 @@ title: registro
 slug: /registro
 ---
 ## Endpoint
-## Tablas
-## Consultas
-### Consulta x
-## Ultima actualizacion
-<div class='ultima-actualizacion'> <small> <i> Ultima actualizacion: <b> xx de xxxx de 202x.</b> </i> </small> <small> <i> Actualizado por: <b> Xxxxx Xxxxx.</b> </i> </small> </div>
+
+```js title="Endpoint"
+SoapCall.Metodo.ENVIARREGISTRO
+
+ENREG
+```
+
+### Consulta A
+
+```js
+return ajax_p29.SincroRegistroCpv(J);
+```
+
+## Ultima actualización
+
+<div class='ultima-actualizacion'> 
+    <small> 
+        <i> Ultima actualización: <b> 1 de junio de 2022.</b> </i> 
+    </small> 
+    <small> 
+        <i> Actualizado por: <b> Julian A. Ortiz.</b> </i> 
+    </small> 
+</div>
