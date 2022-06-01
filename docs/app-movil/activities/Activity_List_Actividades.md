@@ -8,14 +8,14 @@ slug: /activity-list-actividades
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_List_Actividades.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_List_Actividades.java
 ```
 
 ## Tablas
 
-- ```actividadCliente```
-- ```registroActividad```
-- ```registroCheckList```
+- ```actividadCliente``` - (Pendiente)
+- ```registroActividad``` - (Pendiente)
+- ```registroCheckList``` - (Pendiente)
 
 ## Módulos
 

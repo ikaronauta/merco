@@ -7,19 +7,19 @@ slug: /activity-registro-espacio
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio.java
 ```
 
 ## Tablas
 
-- ```clasificacion_categoria_registro```
+- ```clasificacion_categoria_registro``` - (Pendiente)
 - [```cliente```](./../sincronizacion/tablas/cliente.md)
-- ```configuracion```
+- ```configuracion``` - (Pendiente)
 - ```motivo_espacio```
 - [```opcion_espacio```](./../sincronizacion/tablas/opcion_espacio.md)
-- ```registro_categoria_espacios```
-- ```registro_espacios```
-- ```registro_opciones_espacios```
+- ```registro_categoria_espacios``` - (Pendiente)
+- [```registro_espacios```](./../sincronizacion/tablas/registro_espacios.md)
+- [```registro_opciones_espacios```](./../sincronizacion/tablas/registro_opciones_espacios.md)
 
 ## Modulos
 

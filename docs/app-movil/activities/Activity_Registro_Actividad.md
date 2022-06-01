@@ -8,14 +8,14 @@ slug: /activity-registro-actividad
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Actividad.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Actividad.java
 ```
 
 ## Tablas
 
-- ```actividadNovedad```
-- ```categoriaActividad```
-- ```registroActividad```
+- ```actividadNovedad``` - (Pendiente)
+- ```categoriaActividad``` - (Pendiente)
+- ```registroActividad``` - (Pendiente)
 
 ## Módulos
 

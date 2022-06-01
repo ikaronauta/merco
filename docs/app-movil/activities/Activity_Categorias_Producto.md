@@ -8,27 +8,27 @@ slug: /activity-categorias-producto
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Producto.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Producto.java
 ```
 
 ## Tablas
 
 - [```alerta```](./../sincronizacion/tablas/alerta.md)  
 - [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)  
-- ```clasificacion_categoria_registro```
-- ```clasificacion_categorias_espacios```  
+- ```clasificacion_categoria_registro``` - (Pendiente)
+- ```clasificacion_categorias_espacios```  - (Pendiente)
 - [```cliente```](./../sincronizacion/tablas/cliente.md)
 - [```cliente_mercaderista```](./../sincronizacion/tablas/cliente_mercaderista.md)  
 - [```producto```](./../sincronizacion/tablas/producto.md)  
 - [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)  
 - [```producto_competenciaMaxMin```](./../sincronizacion/tablas/producto_competenciaMaxMin.md)  
-- ```productoInventario```
+- ```productoInventario``` - (Pendiente)
 - [```productoMaxMin```](./../sincronizacion/tablas/productoMaxMin.md)
 - [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
 - [```productoscliente```](./../sincronizacion/tablas/productoscliente.md)
-- ```productosventa```  
-- ```rotacionAlerta```
-- ```rotacionDia``` 
+- ```productosventa```  - (Pendiente)
+- ```rotacionAlerta``` - (Pendiente)
+- ```rotacionDia``` - (Pendiente)
 
 ## Módulos
 

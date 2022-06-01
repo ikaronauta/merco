@@ -8,7 +8,7 @@ slug: /activity-marcas
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
 
 ## Tablas

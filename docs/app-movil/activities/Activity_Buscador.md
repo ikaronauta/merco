@@ -8,7 +8,7 @@ slug: /activity-buscador
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Buscador.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Buscador.java
 ```
 
 ## Módulos

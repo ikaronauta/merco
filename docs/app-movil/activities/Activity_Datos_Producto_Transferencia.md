@@ -8,7 +8,7 @@ slug: /activity-datos-producto-transferencia
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Datos_Producto_Transferencia.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Datos_Producto_Transferencia.java
 ```
 
 ## Módulos

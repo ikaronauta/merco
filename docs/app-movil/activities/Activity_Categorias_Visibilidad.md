@@ -7,15 +7,15 @@ slug: /activity-categorias-visibilidad
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Visibilidad.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Visibilidad.java
 ```
 
 ## Tablas
 
 - [```categoria_producto```](./../sincronizacion/tablas/categoria_producto.md)
 - [```cliente```](./../sincronizacion/tablas/cliente.md)
-- ```objetivosVisibilidad```
-- ```registroVisibilidad```
+- [```objetivosVisibilidad```](./../sincronizacion/tablas/objetivosVisibilidad.md)
+- [```registroVisibilidad```](./../sincronizacion/tablas/registroVisibilidad.md)
 
 ## Módulos
 

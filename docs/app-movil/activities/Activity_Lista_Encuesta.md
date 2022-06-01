@@ -8,10 +8,14 @@ slug: /activity-lista-encuesta
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Lista_Encuesta.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Lista_Encuesta.java
 ```
 
 ## Tablas
+
+- [```cliente```](./../sincronizacion/tablas/cliente.md)
+- ```encuesta```- (Pendiente)
+- [```registroEncuesta```](./../sincronizacion/tablas/registroEncuesta.md)
 
 ## Módulos
 

@@ -7,16 +7,16 @@ slug: /activity-informe-espacios
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Informe_Espacios.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Informe_Espacios.java
 ```
 
 ## Tablas
 
-- ```clasificacion_categoria_registro```
-- ```clasificacion_categorias_espacios```
+- ```clasificacion_categoria_registro``` - (Pendiente)
+- ```clasificacion_categorias_espacios``` - (Pendiente)
 - [```planometriaEspacio```](./../sincronizacion/tablas/planometriaEspacio.md)
-- ```registro_categoria_espacios```
-- ```registro_espacios```
+- [```registro_categoria_espacios```](./../sincronizacion/tablas/registro_categoria_espacios.md)
+- [```registro_espacios```](./../sincronizacion/tablas/registro_espacios.md)
 
 ## Modulos
 

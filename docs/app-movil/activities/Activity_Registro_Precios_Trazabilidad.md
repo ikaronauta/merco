@@ -8,7 +8,7 @@ slug: /activity-registro-precios-trazabilidad
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 ```
 
 ## Tablas
@@ -16,7 +16,7 @@ Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Marcas.java
 - [```producto```](./../sincronizacion/tablas/producto.md)  
 - [```producto_competencia```](./../sincronizacion/tablas/producto_competencia.md)  
 - [```productoPrecio```](./../sincronizacion/tablas/productoPrecio.md)
-- ```registroTrazabilidadChequeoPrecios```  
+- ```registroTrazabilidadChequeoPrecios``` - (Pendiente)
 
 ## Módulos
 

@@ -7,13 +7,13 @@ slug: /activity-checklist-actividad
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_CheckList_Actividad.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_CheckList_Actividad.java
 ```
 
 ## Tablas
 
-- ```lista_chequeo```
-- ```registroCheckList```
+- ```lista_chequeo``` - (Pendiente)
+- ```registroCheckList``` - (Pendiente)
 
 
 ## Módulos

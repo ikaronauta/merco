@@ -8,12 +8,12 @@ slug: /activity-codificacion
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Codificacion.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Codificacion.java
 ```
 
 ## Tablas
 
-- ```codificacion```
+- ```codificacion``` - (Pendiente)
 - [```producto```](./../sincronizacion/tablas/producto.md)
 
 ## Módulos

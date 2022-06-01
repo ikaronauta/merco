@@ -8,13 +8,13 @@ slug: /activity-foto-espacio
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Foto_Espacio.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Foto_Espacio.java
 ```
 
 ## Tablas
 
-- ```configuracion```
-- ```fotoespacio```
+- ```configuracion``` - (Pendiente)
+- ```fotoespacio``` - (Pendiente)
 
 ## Módulos
 

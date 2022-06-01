@@ -7,13 +7,13 @@ slug: /activity-categorias-espacio
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Espacio.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Categorias_Espacio.java
 ```
 
 ## Tablas
 
-- ```clasificacion_categoria_registro``` 
-- ```clasificacion_categorias_espacios```
+- ```clasificacion_categoria_registro``` - (Pendiente)
+- ```clasificacion_categorias_espacios``` - (Pendiente)
 
 ## Módulos
 

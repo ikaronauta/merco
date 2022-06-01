@@ -7,7 +7,7 @@ slug: /activity-webviewespacios
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_WebViewEspacios.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_WebViewEspacios.java
 ```
 
 ## Módulos

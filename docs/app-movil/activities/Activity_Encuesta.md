@@ -7,14 +7,14 @@ slug: /activity-encuesta
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Encuesta.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Encuesta.java
 ```
 
 ## Tablas
 
 - [```preguntaEncuesta```](./../sincronizacion/tablas/preguntaEncuesta.md)
-- ```respuestaEncuesta``` 
-- ```tipoRespuesta```
+- ```respuestaEncuesta``` - (Pendiente)
+- ```tipoRespuesta``` - (Pendiente)
 
 ## Módulos
 

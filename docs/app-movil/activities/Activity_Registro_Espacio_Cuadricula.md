@@ -8,12 +8,12 @@ slug: /activity-registro-espacio-cuadricula
 
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio_Cuadricula.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Registro_Espacio_Cuadricula.java
 ```
 
 ## Tablas
 
-- ```clasificacion_categoria_registro```
+- ```clasificacion_categoria_registro``` - (Pendiente)
 
 ## Módulos
 

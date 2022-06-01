@@ -7,12 +7,12 @@ slug: /activity-tipo-visibilidad
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Tipo_Visibilidad.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Tipo_Visibilidad.java
 ```
 
 ## Tablas
 
-- ```tipo_visibilidad```
+- ```tipo_visibilidad``` - (Pendiente)
 
 ## Módulos
 

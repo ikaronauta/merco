@@ -8,13 +8,13 @@ slug: /activity-nuevo-comentario
 ## Ruta
 
 ```js
-Proyect\merco\app\src\main\java\com\bpmco\appmerco\Activity_Nuevo_Comentario.java
+Project\merco\app\src\main\java\com\bpmco\appmerco\Activity_Nuevo_Comentario.java
 ```
 
 ## Tablas
 
-- ```categoriaActividad```
-- ```comentarioActividad```
+- ```categoriaActividad``` - (Pendiente)
+- ```comentarioActividad``` - (Pendiente)
 
 ## Módulos
 
