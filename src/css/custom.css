@@ -52,21 +52,6 @@
   }
 }
 
-.red{
-  display: inline;
-  color: red;
-  font-weight: bold;
-}
-.blue{
-  display: inline;
-  color: blue;
-  font-weight: bold;
-}
-.green{
-  display: inline;
-  color: green;
-  font-weight: bold;
-}
 section{
   background-color: rgb(235, 230, 230);
   padding: 1em;
@@ -77,4 +62,26 @@ section{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+}
+.title-activitie{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-ver-activitie{
+  padding: 5px;
+  border: 1px solid rgb(76, 179, 212);
+  border-radius: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  color: #0e4c77;
+}
+.button-ver-activitie:hover{
+  background-color: #0e4c77;
+  color: white;
+  font-size: medium;
+  text-decoration: none;
 }

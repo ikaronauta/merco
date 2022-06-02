@@ -86,7 +86,6 @@ Merco
                         |
                         ├──► Condición
                         └──► Query
-    
 ```
 
 ## Ultima Actualización

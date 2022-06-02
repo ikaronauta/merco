@@ -16,48 +16,126 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
 
 ## Activities
 
-- [```Activity_Categorias_Espacio```](./../activities/Activity_Categorias_Espacio.md)
+<details>
+<summary>
+<div class="title-activitie">
 
-  :::danger Condición ```Activity_Registro_Espacio```
-  ```js 
-  else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
-  ```
-  :::
-  - [```Activity_Registro_Espacio```](./../activities/Activity_Registro_Espacio.md)
+### Activity Categorias Espacio  
 
-    :::danger Condición ```Activity_Foto_Espacio```
-    ```js 
-    if (view == fab_marcarFoto)
-    ```
-    :::
-    - [```Activity_Foto_Espacio```](./../activities/Activity_Foto_Espacio.md)  
+[Ver Activitie](activity-categorias-espacio)
+</div>
+</summary>
 
-    :::danger Condición ```Activity_Registro_Espacio_Cuadricula```
-    ```js 
-    if (view == imgCuadricula)
+La ***Activity Categorias Espacio*** tiene la siguiente condicion:
 
-    if (registroCuadricula.equals(""))
-    ```
-    :::
-    - [```Activity_Registro_Espacio_Cuadricula```](./../activities/Activity_Registro_Espacio_Cuadricula.md)
+```js 
+else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
+```
 
-    :::danger Condición ```Activity_Registro_Espacio_Cuadricula```
-    ```js 
-    if (view == imgCuadricula)
+Así mismo dentro de la ***Activity Categorias Espacio*** se encuentran las siguientes activities:
 
-    else (registroCuadricula.equals(""))
-    ```
-    :::
-    - [```Activity_Registro_Espacio_Cuadricula```](./../activities/Activity_Registro_Espacio_Cuadricula.md)
+<details>
+<summary>
+<div class="title-activitie">
 
-  :::danger Condición ```Activity_Informe_Espacios```
-  ```js 
-  if(v == fab_btninformeEspacio)
-  ```
-  :::
-  - [```Activity_Informe_Espacios```](./../activities/Activity_Informe_Espacios.md)
+#### Activity Registro Espacio  
 
-    - [```Activity_WebViewEspacios```](./../activities/Activity_WebViewEspacios.md)
+[Ver Activitie](activity-registro-espacio)
+</div>
+</summary>
+
+La ***Activity Registro Espacio*** tiene la siguiente condicion:
+
+```js
+if (view == fab_marcarFoto)
+```
+
+Así mismo dentro de la ***Activity Registro Espacio*** se encuentran las siguientes activities:
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity Foto Espacio  
+
+[Ver Activitie](activity-foto-espacio)
+</div>
+</summary>
+
+```js title="Condiciones activity-foto-espacio"
+if (view == imgCuadricula)
+
+if (registroCuadricula.equals(""))
+```
+
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity Registro Espacio Cuadricula  
+
+[Ver Activitie](activity-registro-espacio-cuadricula)
+</div>
+</summary>
+
+```js title="Condiciones"
+if (view == imgCuadricula)
+
+else (registroCuadricula.equals(""))
+```
+
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity Registro Espacio Cuadricula  
+
+[Ver Activitie](activity-registro-espacio-cuadricula)
+</div>
+
+</summary>
+</details>
+
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity Informe Espacios  
+
+[Ver Activitie](activity-informe-espacios)
+</div>
+</summary>
+
+La ***Activity Informe Espacios*** tiene la siguiente condicion:
+
+```js
+if(v == fab_btninformeEspacio)
+```
+
+Así mismo dentro de la ***Activity Informe Espacios*** se encuentran la siguiente activitie:
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity WebViewEspacios  
+
+[Ver Activitie](activity-webviewespacios)
+</div>
+
+</summary>
+</details>
+
+</details>
+
+</details>
+
 
 ## Ultima Actualización
 
@@ -65,7 +143,7 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
   <small>
     <i>
       Ultima actualización:
-      <b> 23 de mayo de 2022.</b>
+      <b> 2 de junio de 2022.</b>
     </i>
   </small>
 
