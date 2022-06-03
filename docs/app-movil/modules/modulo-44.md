@@ -16,13 +16,49 @@ prefsEditor.putString("tareaActual", "Chequeo de Precios Trazabilidad")
 
 ## Activities
 
-- [```Activity_Categorias_Producto```](../activities/Activity_Categorias_Producto.md)
+<details>
+<summary>
+<div class="title-activitie">
 
-- [```Activity_Marcas```](../activities/Activity_Marcas.md)
+### Activity_Categorias_Producto
+[Ver activitie](../activities/Activity_Categorias_Producto.md)
+</div>
+</summary>
 
-- [```Activity_Registro_Precios_Trazabilidad```](../activities/Activity_Registro_Precios_Trazabilidad.md)
+La **```Activity_Categorias_Producto```** tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
 
-- [```Activity_Registrar_Precio```](../activities/Activity_Registrar_Precio.md)  
+#### Activity_Marcas
+[Ver Activitie](../activities/Activity_Marcas.md)
+</div>
+</summary>
+
+La **```Activity_Marcas```** tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Registro_Precios_Trazabilidad
+[Ver Activitie](../activities/Activity_Registro_Precios_Trazabilidad.md)
+</div>
+</summary>
+
+La **```Activity_Registro_Precios_Trazabilidad```** tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Registrar_Precio
+[Ver Activitie](../activities/Activity_Registrar_Precio.md)
+</div>
+</summary>
+</details>
+</details>
+</details>
+</details>
+
 
 ## Ultima Actualización
 
