@@ -69,19 +69,3 @@ section{
   justify-content: space-between;
   align-items: center;
 }
-.button-ver-activitie{
-  padding: 5px;
-  border: 1px solid rgb(76, 179, 212);
-  border-radius: 10px;
-  font-family: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: white;
-  color: #0e4c77;
-}
-.button-ver-activitie:hover{
-  background-color: #0e4c77;
-  color: white;
-  font-size: medium;
-  text-decoration: none;
-}

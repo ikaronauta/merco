@@ -20,120 +20,88 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
 <summary>
 <div class="title-activitie">
 
-### Activity Categorias Espacio  
+### Activity_Categorias_Espacio
+[Ver Activitie](../activities/Activity_Categorias_Espacio.md)
+</div>  
+</summary>
 
-[Ver Activitie](activity-categorias-espacio)
+La ***````Activity_Categorias_Espacio````*** tiene las siguientes activities:  
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Registro_Espacio
+[Ver Activitie](../activities/Activity_Registro_Espacio.md)
 </div>
 </summary>
 
-La ***Activity Categorias Espacio*** tiene la siguiente condicion:
-
-```js 
+La ***```Activity_Registro_Espacio```*** tiene la siguiente condición:
+```js
 else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
 ```
 
-Así mismo dentro de la ***Activity Categorias Espacio*** se encuentran las siguientes activities:
+Así mismo tiene las siguientes activities:
 
 <details>
 <summary>
 <div class="title-activitie">
 
-#### Activity Registro Espacio  
-
-[Ver Activitie](activity-registro-espacio)
+#### Activity_Foto_Espacio
+[Ver Activitie](../activities/Activity_Foto_Espacio.md)
 </div>
 </summary>
 
-La ***Activity Registro Espacio*** tiene la siguiente condicion:
-
+La ***```Activity_Foto_Espacio```*** tiene la siguiente condición:
 ```js
 if (view == fab_marcarFoto)
 ```
-
-Así mismo dentro de la ***Activity Registro Espacio*** se encuentran las siguientes activities:
+</details>
 
 <details>
 <summary>
 <div class="title-activitie">
 
-#### Activity Foto Espacio  
-
-[Ver Activitie](activity-foto-espacio)
+#### Activity_Registro_Espacio_Cuadricula
+[Ver Activitie](../activities/Activity_Registro_Espacio_Cuadricula.md)
 </div>
 </summary>
 
-```js title="Condiciones activity-foto-espacio"
+La ***```Activity_Registro_Espacio_Cuadricula```*** tiene las siguientes condiciones:
+```js
 if (view == imgCuadricula)
 
 if (registroCuadricula.equals(""))
 ```
-
 </details>
 
 <details>
 <summary>
 <div class="title-activitie">
 
-#### Activity Registro Espacio Cuadricula  
-
-[Ver Activitie](activity-registro-espacio-cuadricula)
+#### Activity_Registro_Espacio_Cuadricula
+[Ver Activitie](../activities/Activity_Registro_Espacio_Cuadricula.md)
 </div>
 </summary>
 
-```js title="Condiciones"
+La **```Activity_Registro_Espacio_Cuadricula```** tiene las siguientes condiciones:
+```js
 if (view == imgCuadricula)
 
 else (registroCuadricula.equals(""))
 ```
-
+</details>
 </details>
 
 <details>
 <summary>
 <div class="title-activitie">
 
-#### Activity Registro Espacio Cuadricula  
-
-[Ver Activitie](activity-registro-espacio-cuadricula)
-</div>
-
-</summary>
-</details>
-
-</details>
-
-<details>
-<summary>
-<div class="title-activitie">
-
-#### Activity Informe Espacios  
-
-[Ver Activitie](activity-informe-espacios)
+#### Activity_Informe_Espacios
+[Ver Activitie](../activities/Activity_Informe_Espacios.md)
 </div>
 </summary>
-
-La ***Activity Informe Espacios*** tiene la siguiente condicion:
-
-```js
-if(v == fab_btninformeEspacio)
-```
-
-Así mismo dentro de la ***Activity Informe Espacios*** se encuentran la siguiente activitie:
-
-<details>
-<summary>
-<div class="title-activitie">
-
-#### Activity WebViewEspacios  
-
-[Ver Activitie](activity-webviewespacios)
-</div>
-
-</summary>
 </details>
-
-</details>
-
 </details>
 
 

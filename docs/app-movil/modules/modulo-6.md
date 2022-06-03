@@ -16,30 +16,66 @@ prefsEditor.putString("tareaActual", "Transferencia")
 
 ## Activities
 
-- [```Activity_Transferencia2```](./../activities/Activity_Transferencia2.md)
+<details>
+<summary>
+<div class="title-activitie">
 
-  <!-- Primer Activity dentro de Activity_Transferencia2 -->
-  :::danger Condición ```Activity_Buscador```
-  ```js
-  if (v == imgBuscar)
-  ```
-  :::
-  - [```Activity_Buscador```](./../activities/Activity_Buscador.md)
+### Activity_Transferencia2
+[Ver Activitie](../activities/Activity_Transferencia2.md)
+</div>
+</summary>
 
-  <!-- Segunda Activity dentro de Activity_Transferencia2 -->
-  :::danger Condicion ```Activity_Productos_Transferencia```
-  ```js
-  if (v == imgAdd)
-  ```
-  :::
+La **```Activity_Transferencia2```** tiene las siguientes activities:
+<details>
+<summary>
+<div class="title-activitie">
 
-  <!-- Tercera Activity dentro de Activity_Transferencia2 -->
-  - [```Activity_Productos_Transferencia```](./../activities/Activity_Productos_Transferencia.md)
+#### Activity_Buscador
+[Ver Activitie](../activities/Activity_Buscador.md)
+</div>
+</summary>
 
-    - [```Activity_Datos_Producto_Transferencia```](./../activities/Activity_Datos_Producto_Transferencia.md)  
+La **```Activity_Buscador```** tiene la siguiente condicion:
+```js
+if (v == imgBuscar)
+```
+</details>
 
-  <!-- Cuarta Activity dentro de Activity_Transferencia2 -->
-  - [```Activity_Datos_Producto_Transferencia```](./../activities/Activity_Datos_Producto_Transferencia.md)
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Productos_Transferencia
+[Ver Activitie](../activities/Activity_Productos_Transferencia.md)
+</div>
+</summary>
+
+La **```Activity_Productos_Transferencia```** tiene la siguiente condicion:
+```js
+if (v == imgAdd)
+```
+Así mismo tien la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Datos_Producto_Transferencia
+[Ver Activitie](../activities/Activity_Datos_Producto_Transferencia.md)
+</div>
+</summary>
+</details>
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Datos_Producto_Transferencia
+[Ver Activitie](../activities/Activity_Datos_Producto_Transferencia.md)
+</div>
+</summary>
+</details>
+</details>
 
 ## Ultima Actualización
 
