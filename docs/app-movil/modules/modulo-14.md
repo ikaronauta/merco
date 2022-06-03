@@ -10,14 +10,26 @@ slug: /encuestas
 
 ## Activities
 
-- [```Activity_Lista_Encuesta```](./../activities/Activity_Lista_Encuesta.md)
+<details>
+<summary>
+<div class="title-activitie">
 
-  :::danger Condición ```Activity_Encuesta```
-  ```js 
-  else (encuesta.getEnc_cantidadRegistrosPermitidos() == encuesta.getEnc_cantidadRegistrosRealizados())
-  ```
-  :::
-  - [```Activity_Encuesta```](./../activities/Activity_Encuesta.md)
+### Activity_Lista_Encuesta
+[Ver Activitie](../activities/Activity_Lista_Encuesta.md)
+</div>
+</summary>
+
+La **```Activity_Lista_Encuesta```** tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Encuesta
+[Ver Activitie](../activities/Activity_Encuesta.md)
+</div>
+</summary>
+</details>
+</details>
 
 ## Ultima Actualización
 
