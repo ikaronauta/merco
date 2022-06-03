@@ -10,6 +10,90 @@ slug: /actividades
 
 ## Activities
 
+<details>
+<summary>
+<div class="title-activitie">
+
+### Activity_List_Actividades
+[Ver Activitie](../activities/Activity_List_Actividades.md)
+</div>
+</summary>
+
+La **```Activity_List_Actividades```** tiene las siguientes activities:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_CheckList_Actividad
+[Ver Activitie](../activities/Activity_CheckList_Actividad.md)
+</div>
+</summary>
+
+La **```Activity_CheckList_Actividad```** tiene la siguientes condiciones:
+```js
+switch (tipoUsuario)
+
+case TipoUsuario.CHECKLIST
+```
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Registro_Actividad
+[Ver Activitie](../activities/Activity_Registro_Actividad.md)
+</div>
+</summary>
+
+La **```Activity_Registro_Actividad```** tiene la siguientes condiciones:
+```js
+switch (tipoUsuario)
+
+case TipoUsuario.NOVEDAD
+```
+
+Así mismo tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Nuevo_Comentario
+[Ver Activitie](../activities/Activity_Nuevo_Comentario.md)
+</div>
+</summary>
+
+La **```Activity_Nuevo_Comentario```** tiene la siguientes condiciones:
+```js
+if (v == fab_comentario)
+
+if (guardar)
+
+if (msj.equals("Valido"))
+
+if (id > 0)
+```
+</details>
+</details>
+
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Registro_Actividad
+[Ver Activitie](../activities/Activity_Registro_Actividad.md)
+</div>
+</summary>
+
+La **```Activity_Registro_Actividad```** tiene la siguientes condiciones:
+```js
+switch (tipoUsuario)
+
+default
+```
+</details>
+</details>
+
 - [```Activity_List_Actividades```](./../activities/Activity_List_Actividades.md)
 
   <!-- Primer Activity dentro de Activity_List_Actividades -->
