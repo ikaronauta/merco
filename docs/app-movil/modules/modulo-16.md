@@ -10,7 +10,15 @@ slug: /modulo-codificacion
 
 ## Activities
 
-- [```Activity_Codificacion```](./../activities/Activity_Codificacion.md)
+<details>
+<summary>
+<div class="title-activitie">
+
+### Activity_Codificacion
+[Ver Activitie](../activities/Activity_Codificacion.md)
+</div>
+</summary>
+</details>
 
 ## Ultima Actualización
 
@@ -18,7 +26,7 @@ slug: /modulo-codificacion
   <small>
     <i>
       Ultima actualización:
-      <b> 24 de mayo de 2022.</b>
+      <b> 3 de junio de 2022.</b>
     </i>
   </small>
 
