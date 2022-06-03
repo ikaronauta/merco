@@ -25,7 +25,7 @@ prefsEditor.putString("tareaActual", "RegistroEspacios")
 </div>  
 </summary>
 
-La ***````Activity_Categorias_Espacio````*** tiene las siguientes activities:  
+La **````Activity_Categorias_Espacio````** tiene las siguientes activities:  
 
 <details>
 <summary>
@@ -36,7 +36,7 @@ La ***````Activity_Categorias_Espacio````*** tiene las siguientes activities:
 </div>
 </summary>
 
-La ***```Activity_Registro_Espacio```*** tiene la siguiente condición:
+La **```Activity_Registro_Espacio```** tiene la siguiente condición:
 ```js
 else (mPrefs.getString("tareaActual", "").equals("RegistroEspaciosObservacion"))
 ```
@@ -52,7 +52,7 @@ Así mismo tiene las siguientes activities:
 </div>
 </summary>
 
-La ***```Activity_Foto_Espacio```*** tiene la siguiente condición:
+La **```Activity_Foto_Espacio```** tiene la siguiente condición:
 ```js
 if (view == fab_marcarFoto)
 ```
@@ -67,7 +67,7 @@ if (view == fab_marcarFoto)
 </div>
 </summary>
 
-La ***```Activity_Registro_Espacio_Cuadricula```*** tiene las siguientes condiciones:
+La **```Activity_Registro_Espacio_Cuadricula```** tiene las siguientes condiciones:
 ```js
 if (view == imgCuadricula)
 

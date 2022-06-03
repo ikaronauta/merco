@@ -16,6 +16,28 @@ prefsEditor.putString("tareaActual", "Visibilidad")
 
 ## Activities
 
+<details>
+<summary>
+<div class="title-activitie">
+
+### Activity_Tipo_Visibilidad
+[Ver Activitie](../activities/Activity_Tipo_Visibilidad.md)
+</div>
+</summary>
+
+La **```Activity_Tipo_Visibilidad```** tiene la siguiente activitie:
+<details>
+<summary>
+<div class="title-activitie">
+
+#### Activity_Categorias_Visibilidad
+[Ver Activitie](../activities/Activity_Categorias_Visibilidad.md)
+</div>
+</summary>
+</details>
+</details>
+
+
 - [```Activity_Tipo_Visibilidad```](./../activities/Activity_Tipo_Visibilidad.md)
 
     - [```Activity_Categorias_Visibilidad```](./../activities/Activity_Categorias_Visibilidad.md)
