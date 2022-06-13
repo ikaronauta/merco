@@ -208,7 +208,8 @@ private void cargarMarcas(int categoria)
 ```
 
 ```js title="Condiciones"
-if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS"))
+if (mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_V2")
+  || mPrefs.getString("tareaActual", "").equals("CHEQUEO_DE_PRECIOS_MARCAS_TRAZABILIDAD"))
 ```
 
 ```js title="Método"
